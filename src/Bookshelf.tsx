@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Book, Hash, X, User } from 'lucide-react';
+import { ArrowLeft, Book, Hash, X, User, CheckCircle2, Circle, PenLine } from 'lucide-react';
 import volumesData from '../volumes.json';
 
 interface Work {
@@ -14,8 +14,45 @@ interface Work {
   description?: string;
 }
 
+interface UserProgress {
+  [workId: string]: {
+    isRead: boolean;
+    notes: string;
+  };
+}
+
 const Bookshelf: React.FC = () => {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
+  const [userProgress, setUserProgress] = useState<UserProgress>(() => {
+    const saved = localStorage.getItem('volumes-user-progress');
+    return saved ? JSON.parse(saved) : {};
+  });
+
+  useEffect(() => {
+    localStorage.setItem('volumes-user-progress', JSON.stringify(userProgress));
+  }, [userProgress]);
+
+  const toggleRead = (workId: string) => {
+    setUserProgress(prev => ({
+      ...prev,
+      [workId]: {
+        ...prev[workId],
+        isRead: !prev[workId]?.isRead
+      }
+    }));
+  };
+
+  const updateNotes = (workId: string, notes: string) => {
+    if (notes.length > 512) return;
+    setUserProgress(prev => ({
+      ...prev,
+      [workId]: {
+        ...prev[workId],
+        notes
+      }
+    }));
+  };
+
   const periods = volumesData.nodes.filter(n => n.type === 'period');
   const works = volumesData.nodes.filter(n => n.type === 'work');
   const genres = volumesData.nodes.filter(n => n.type === 'genre');
@@ -112,9 +149,14 @@ const Bookshelf: React.FC = () => {
                               <div className="flex items-start space-x-4">
                                 <Book className="w-5 h-5 text-slate-400 mt-1" />
                                 <div>
-                                  <h5 className="text-lg font-extrabold text-slate-900 group-hover:text-slate-700 leading-tight mb-2">
-                                    {work.label}
-                                  </h5>
+                                  <div className="flex items-center space-x-2">
+                                    <h5 className="text-lg font-extrabold text-slate-900 group-hover:text-slate-700 leading-tight">
+                                      {work.label}
+                                    </h5>
+                                    {userProgress[work.id]?.isRead && (
+                                      <CheckCircle2 className="w-4 h-4 text-emerald-500 fill-emerald-50" />
+                                    )}
+                                  </div>
                                   <p className="text-slate-600 font-semibold mb-3">
                                     {work.author || 'Anonymous'}
                                   </p>
@@ -159,6 +201,26 @@ const Bookshelf: React.FC = () => {
                   <div className="px-3 py-1 bg-slate-100 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
                     {selectedWork.region ? regions.find(r => r.id === selectedWork.region)?.label : 'Unknown Region'}
                   </div>
+                  <button
+                    onClick={() => toggleRead(selectedWork.id)}
+                    className={`ml-auto flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all duration-300 ${
+                      userProgress[selectedWork.id]?.isRead 
+                        ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-200' 
+                        : 'bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-600'
+                    }`}
+                  >
+                    {userProgress[selectedWork.id]?.isRead ? (
+                      <>
+                        <CheckCircle2 className="w-4 h-4" />
+                        <span>Completed</span>
+                      </>
+                    ) : (
+                      <>
+                        <Circle className="w-4 h-4" />
+                        <span>Mark as Read</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <h3 className="text-4xl font-black text-slate-950 leading-tight mb-4">
                   {selectedWork.label}
@@ -191,6 +253,26 @@ const Bookshelf: React.FC = () => {
                     </p>
                   </div>
                 )}
+
+                <div className="pt-8 border-t border-slate-100">
+                  <div className="flex items-center justify-between mb-4">
+                    <h4 className="flex items-center space-x-2 text-xs font-black uppercase tracking-[0.2em] text-slate-400">
+                      <PenLine className="w-3.5 h-3.5" />
+                      <span>My Personal Notes</span>
+                    </h4>
+                    <span className={`text-[10px] font-bold ${
+                      (userProgress[selectedWork.id]?.notes?.length || 0) >= 500 ? 'text-rose-500' : 'text-slate-300'
+                    }`}>
+                      {userProgress[selectedWork.id]?.notes?.length || 0} / 512
+                    </span>
+                  </div>
+                  <textarea
+                    value={userProgress[selectedWork.id]?.notes || ''}
+                    onChange={(e) => updateNotes(selectedWork.id, e.target.value.slice(0, 512))}
+                    placeholder="Reflect on this work..."
+                    className="w-full h-32 p-4 bg-slate-50 rounded-2xl border border-slate-100 focus:border-slate-300 focus:ring-4 focus:ring-slate-100 outline-none resize-none text-slate-600 font-medium placeholder:text-slate-300 transition-all duration-300"
+                  />
+                </div>
               </div>
 
               <div className="mt-12 flex justify-end">
