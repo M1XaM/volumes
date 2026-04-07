@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Book, Hash } from 'lucide-react';
+import { ArrowLeft, Book, Hash, X, User } from 'lucide-react';
 import volumesData from '../volumes.json';
 
 interface Work {
@@ -8,11 +8,14 @@ interface Work {
   type: string;
   label: string;
   author?: string;
+  authorDescription?: string;
   region?: string;
   genre: string;
+  description?: string;
 }
 
 const Bookshelf: React.FC = () => {
+  const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const periods = volumesData.nodes.filter(n => n.type === 'period');
   const works = volumesData.nodes.filter(n => n.type === 'work');
   const genres = volumesData.nodes.filter(n => n.type === 'genre');
@@ -101,7 +104,11 @@ const Bookshelf: React.FC = () => {
                         </div>
                         <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-8">
                           {genreWorks.map(work => (
-                            <div key={work.id} className="p-6 bg-slate-50/50 rounded-2xl hover:bg-slate-100/50 transition-all duration-300 border border-transparent hover:border-slate-200 group">
+                            <div 
+                              key={work.id} 
+                              onClick={() => setSelectedWork(work)}
+                              className="p-6 bg-slate-50/50 rounded-2xl hover:bg-slate-100/50 transition-all duration-300 border border-transparent hover:border-slate-200 group cursor-pointer"
+                            >
                               <div className="flex items-start space-x-4">
                                 <Book className="w-5 h-5 text-slate-400 mt-1" />
                                 <div>
@@ -128,6 +135,78 @@ const Bookshelf: React.FC = () => {
           })}
         </div>
       </div>
+
+      {/* Book Detail Modal */}
+      {selectedWork && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-slate-950/40 backdrop-blur-sm animate-in fade-in duration-300">
+          <div 
+            className="w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-8 duration-500"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="relative p-8 sm:p-12">
+              <button 
+                onClick={() => setSelectedWork(null)}
+                className="absolute top-6 right-6 p-2 rounded-full bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-900 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="mb-10">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="px-3 py-1 bg-slate-100 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+                    {getGenreForWork(selectedWork.id)?.label || 'Work'}
+                  </div>
+                  <div className="px-3 py-1 bg-slate-100 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+                    {selectedWork.region ? regions.find(r => r.id === selectedWork.region)?.label : 'Unknown Region'}
+                  </div>
+                </div>
+                <h3 className="text-4xl font-black text-slate-950 leading-tight mb-4">
+                  {selectedWork.label}
+                </h3>
+                <div className="flex items-center space-x-2 text-slate-600">
+                  <User className="w-4 h-4 text-slate-400" />
+                  <span className="text-lg font-bold">{selectedWork.author || 'Anonymous'}</span>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                <div>
+                  <h4 className="flex items-center space-x-2 text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
+                    <Book className="w-3.5 h-3.5" />
+                    <span>About the Volume</span>
+                  </h4>
+                  <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                    {selectedWork.description || 'No description available for this work.'}
+                  </p>
+                </div>
+
+                {selectedWork.author && (
+                  <div className="pt-8 border-t border-slate-100">
+                    <h4 className="flex items-center space-x-2 text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
+                      <User className="w-3.5 h-3.5" />
+                      <span>About the Author</span>
+                    </h4>
+                    <p className="text-base text-slate-500 leading-relaxed">
+                      {selectedWork.authorDescription || 'No description available for this author.'}
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              <div className="mt-12 flex justify-end">
+                <button 
+                  onClick={() => setSelectedWork(null)}
+                  className="px-8 py-3 bg-slate-900 text-white rounded-2xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* Overlay click to close */}
+          <div className="fixed inset-0 -z-10" onClick={() => setSelectedWork(null)}></div>
+        </div>
+      )}
     </div>
   );
 };
