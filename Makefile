@@ -1,0 +1,11 @@
+# Build and Run
+run:
+	npm install
+	npm run dev
+
+build:
+	npm install
+	npm run build
+
+clean:
+	rm -rf node_modules dist
