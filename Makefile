@@ -1,10 +1,10 @@
 # Build and Run
 run:
-	npm install
+	npm install --legacy-peer-deps
 	npm run dev
 
 build:
-	npm install
+	npm install --legacy-peer-deps
 	npm run build
 
 clean:
