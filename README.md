@@ -10,4 +10,4 @@ Features include:
 ## Live Demo
 
 Explore the live site on GitHub Pages:
-[Volumes Live Site](https://m1xam.github.io/volumes) *(Note: update with your actual GitHub username if different)*
+[Volumes Live Site](https://maxim.github.io/volumes) *(Note: update with your actual GitHub username if different)*
