@@ -1,0 +1,722 @@
+{
+  "nodes": [
+    {
+      "id": "p_antiquity",
+      "type": "period",
+      "label": "Antiquity",
+      "range": "VIII BC - V AD"
+    },
+    {
+      "id": "p_medieval",
+      "type": "period",
+      "label": "Medieval",
+      "range": "V-XIV"
+    },
+    {
+      "id": "p_renaissance",
+      "type": "period",
+      "label": "Renaissance",
+      "range": "XIV-XVII"
+    },
+    {
+      "id": "p_enlightenment",
+      "type": "period",
+      "label": "Enlightenment",
+      "range": "XVII-XVIII"
+    },
+    {
+      "id": "p_19",
+      "type": "period",
+      "label": "19th Century"
+    },
+    {
+      "id": "p_20",
+      "type": "period",
+      "label": "20th Century"
+    },
+    {
+      "id": "p_contemporary",
+      "type": "period",
+      "label": "Contemporary"
+    },
+    {
+      "id": "r_greece",
+      "type": "region",
+      "label": "Greece"
+    },
+    {
+      "id": "r_rome",
+      "type": "region",
+      "label": "Rome"
+    },
+    {
+      "id": "r_china",
+      "type": "region",
+      "label": "China"
+    },
+    {
+      "id": "r_india",
+      "type": "region",
+      "label": "India"
+    },
+    {
+      "id": "r_japan",
+      "type": "region",
+      "label": "Japan"
+    },
+    {
+      "id": "r_arabic",
+      "type": "region",
+      "label": "Arabic"
+    },
+    {
+      "id": "r_persian",
+      "type": "region",
+      "label": "Persian"
+    },
+    {
+      "id": "r_europe",
+      "type": "region",
+      "label": "Europe"
+    },
+    {
+      "id": "r_usa",
+      "type": "region",
+      "label": "American"
+    },
+    {
+      "id": "r_russia",
+      "type": "region",
+      "label": "Russian"
+    },
+    {
+      "id": "r_africa",
+      "type": "region",
+      "label": "African"
+    },
+    {
+      "id": "r_latam",
+      "type": "region",
+      "label": "Latin America"
+    },
+    {
+      "id": "g_epic",
+      "type": "genre",
+      "label": "Epic Poetry"
+    },
+    {
+      "id": "g_tragedy",
+      "type": "genre",
+      "label": "Greek Tragedy"
+    },
+    {
+      "id": "g_philosophy",
+      "type": "genre",
+      "label": "Philosophy"
+    },
+    {
+      "id": "g_prose",
+      "type": "genre",
+      "label": "Prose"
+    },
+    {
+      "id": "g_romance",
+      "type": "genre",
+      "label": "Romance"
+    },
+    {
+      "id": "g_realism",
+      "type": "genre",
+      "label": "Realism"
+    },
+    {
+      "id": "g_gothic",
+      "type": "genre",
+      "label": "Gothic"
+    },
+    {
+      "id": "g_romanticism",
+      "type": "genre",
+      "label": "Romanticism"
+    },
+    {
+      "id": "g_modernism",
+      "type": "genre",
+      "label": "Modernism"
+    },
+    {
+      "id": "g_postmodernism",
+      "type": "genre",
+      "label": "Postmodernism"
+    },
+    {
+      "id": "g_existentialism",
+      "type": "genre",
+      "label": "Existentialism"
+    },
+    {
+      "id": "g_absurdism",
+      "type": "genre",
+      "label": "Absurdism"
+    },
+    {
+      "id": "g_dystopian",
+      "type": "genre",
+      "label": "Dystopian"
+    },
+    {
+      "id": "g_magical_realism",
+      "type": "genre",
+      "label": "Magical Realism"
+    },
+    {
+      "id": "g_postcolonial",
+      "type": "genre",
+      "label": "Post-Colonial"
+    },
+    {
+      "id": "w_republic",
+      "type": "work",
+      "label": "The Republic",
+      "author": "Plato",
+      "authorDescription": "A foundational figure in Western philosophy and the founder of the Academy in Athens, the first institution of higher learning in the Western world.",
+      "description": "Socratic dialogue, authored by Plato around 375 BC, concerning justice, the order and character of the just city-state, and the just man.",
+      "region": "r_greece"
+    },
+    {
+      "id": "w_symposium",
+      "type": "work",
+      "label": "Symposium",
+      "author": "Plato",
+      "authorDescription": "A foundational figure in Western philosophy and the founder of the Academy in Athens, the first institution of higher learning in the Western world.",
+      "description": "A philosophical text by Plato dated c. 385–370 BC. It depicts a friendly contest of extemporaneous speeches given by a group of notable men attending a banquet.",
+      "region": "r_greece"
+    },
+    {
+      "id": "w_lucretius",
+      "type": "work",
+      "label": "On the Nature of Things",
+      "author": "Lucretius",
+      "authorDescription": "A Roman poet and philosopher. His only known work is the philosophical poem De rerum natura, a didactic work about the tenets and philosophy of Epicureanism.",
+      "description": "A first-century BC didactic poem by the Roman poet and philosopher Lucretius with the goal of explaining Epicurean philosophy to a Roman audience.",
+      "region": "r_rome"
+    },
+    {
+      "id": "w_iliad",
+      "type": "work",
+      "label": "Iliad",
+      "author": "Homer",
+      "authorDescription": "The semi-legendary author to whom the Iliad and the Odyssey are attributed. He is regarded as one of the greatest and most influential authors of all time.",
+      "description": "An ancient Greek epic poem in dactylic hexameter, traditionally attributed to Homer. Set during the Trojan War, the ten-year siege of the city of Troy by a coalition of Greek states.",
+      "region": "r_greece"
+    },
+    {
+      "id": "w_odyssey",
+      "type": "work",
+      "label": "Odyssey",
+      "author": "Homer",
+      "authorDescription": "The semi-legendary author to whom the Iliad and the Odyssey are attributed. He is regarded as one of the greatest and most influential authors of all time.",
+      "description": "One of two major ancient Greek epic poems attributed to Homer. It follow the Greek hero Odysseus, king of Ithaca, and his journey home after the Trojan War.",
+      "region": "r_greece"
+    },
+    {
+      "id": "w_aeneid",
+      "type": "work",
+      "label": "Aeneid",
+      "author": "Virgil",
+      "authorDescription": "An ancient Roman poet of the Augustan period. He wrote three of the most famous poems in Latin literature: the Eclogues, the Georgics, and the epic Aeneid.",
+      "description": "A Latin epic poem, written by Virgil between 29 and 19 BC, that tells the legendary story of Aeneas, a Trojan who travelled to Italy, where he became the ancestor of the Romans.",
+      "region": "r_rome"
+    },
+    {
+      "id": "w_metamorphoses",
+      "type": "work",
+      "label": "Metamorphoses",
+      "author": "Ovid",
+      "authorDescription": "A Roman poet who lived during the reign of Augustus. He was a contemporary of the older Virgil and Horace, with whom he is often ranked as one of the three canonical poets of Latin literature.",
+      "description": "A Latin narrative poem by the Roman poet Ovid, considered his magnum opus. Comprising 11,995 lines, 15 books and over 250 myths, the poem chronicles the history of the world from its creation to the deification of Julius Caesar.",
+      "region": "r_rome"
+    },
+    {
+      "id": "w_golden_ass",
+      "type": "work",
+      "label": "The Golden Ass",
+      "author": "Apuleius",
+      "region": "r_rome"
+    },
+    {
+      "id": "w_lives",
+      "type": "work",
+      "label": "Lives",
+      "author": "Plutarch",
+      "region": "r_rome"
+    },
+    {
+      "id": "w_oedipus",
+      "type": "work",
+      "label": "Oedipus the King",
+      "author": "Sophocles",
+      "region": "r_greece"
+    },
+    {
+      "id": "w_medea",
+      "type": "work",
+      "label": "Medea",
+      "author": "Euripides",
+      "region": "r_greece"
+    },
+    {
+      "id": "w_gilgamesh",
+      "type": "work",
+      "label": "Epic of Gilgamesh",
+      "region": "r_persian"
+    },
+    {
+      "id": "w_mahabharata",
+      "type": "work",
+      "label": "Mahabharata",
+      "author": "Ved Vyasa",
+      "region": "r_india"
+    },
+    {
+      "id": "w_ramayana",
+      "type": "work",
+      "label": "Ramayana",
+      "author": "Valmiki",
+      "region": "r_india"
+    },
+    {
+      "id": "w_divine_comedy",
+      "type": "work",
+      "label": "The Divine Comedy",
+      "author": "Dante",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_beowulf",
+      "type": "work",
+      "label": "Beowulf",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_roland",
+      "type": "work",
+      "label": "Song of Roland",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_canterbury",
+      "type": "work",
+      "label": "Canterbury Tales",
+      "author": "Chaucer",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_prince",
+      "type": "work",
+      "label": "The Prince",
+      "author": "Machiavelli",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_montaigne",
+      "type": "work",
+      "label": "Essays",
+      "author": "Montaigne",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_don_quixote",
+      "type": "work",
+      "label": "Don Quixote",
+      "author": "Cervantes",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_hamlet",
+      "type": "work",
+      "label": "Hamlet",
+      "author": "Shakespeare",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_king_lear",
+      "type": "work",
+      "label": "King Lear",
+      "author": "Shakespeare",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_les_mis",
+      "type": "work",
+      "label": "Les Mis\u00e9rables",
+      "author": "Victor Hugo",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_frankenstein",
+      "type": "work",
+      "label": "Frankenstein",
+      "author": "Mary Shelley",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_jane_eyre",
+      "type": "work",
+      "label": "Jane Eyre",
+      "author": "Charlotte Bront\u00eb",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_moby_dick",
+      "type": "work",
+      "label": "Moby Dick",
+      "author": "Herman Melville",
+      "region": "r_usa"
+    },
+    {
+      "id": "w_anna_karenina",
+      "type": "work",
+      "label": "Anna Karenina",
+      "author": "Tolstoy",
+      "region": "r_russia"
+    },
+    {
+      "id": "w_crime_punishment",
+      "type": "work",
+      "label": "Crime and Punishment",
+      "author": "Dostoevsky",
+      "region": "r_russia"
+    },
+    {
+      "id": "w_trial",
+      "type": "work",
+      "label": "The Trial",
+      "author": "Kafka",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_godot",
+      "type": "work",
+      "label": "Waiting for Godot",
+      "author": "Beckett",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_stranger",
+      "type": "work",
+      "label": "The Stranger",
+      "author": "Camus",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_1984",
+      "type": "work",
+      "label": "1984",
+      "author": "Orwell",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_ulysses",
+      "type": "work",
+      "label": "Ulysses",
+      "author": "Joyce",
+      "region": "r_europe"
+    },
+    {
+      "id": "w_pynchon",
+      "type": "work",
+      "label": "Gravity\u2019s Rainbow",
+      "author": "Pynchon",
+      "region": "r_usa"
+    },
+    {
+      "id": "w_things_fall_apart",
+      "type": "work",
+      "label": "Things Fall Apart",
+      "author": "Achebe",
+      "region": "r_africa"
+    },
+    {
+      "id": "w_midnight_children",
+      "type": "work",
+      "label": "Midnight\u2019s Children",
+      "author": "Rushdie",
+      "region": "r_india"
+    },
+    {
+      "id": "w_beloved",
+      "type": "work",
+      "label": "Beloved",
+      "author": "Toni Morrison",
+      "region": "r_usa"
+    },
+    {
+      "id": "w_blood_meridian",
+      "type": "work",
+      "label": "Blood Meridian",
+      "author": "McCarthy",
+      "region": "r_usa"
+    },
+    {
+      "id": "w_white_noise",
+      "type": "work",
+      "label": "White Noise",
+      "author": "DeLillo",
+      "region": "r_usa"
+    },
+    {
+      "id": "w_name_of_rose",
+      "type": "work",
+      "label": "The Name of the Rose",
+      "author": "Eco",
+      "region": "r_europe",
+      "genre": "g_postmodernism"
+    },
+    {
+      "id": "w_100_years",
+      "type": "work",
+      "label": "One Hundred Years of Solitude",
+      "author": "Gabriel Garc\u00eda M\u00e1rquez",
+      "region": "r_latam",
+      "genre": "g_magical_realism"
+    }
+  ],
+  "edges": [
+    {
+      "from": "p_antiquity",
+      "to": "g_epic",
+      "type": "contains"
+    },
+    {
+      "from": "p_antiquity",
+      "to": "g_tragedy",
+      "type": "contains"
+    },
+    {
+      "from": "p_antiquity",
+      "to": "g_philosophy",
+      "type": "contains"
+    },
+    {
+      "from": "p_medieval",
+      "to": "g_romance",
+      "type": "contains"
+    },
+    {
+      "from": "p_19",
+      "to": "g_realism",
+      "type": "contains"
+    },
+    {
+      "from": "p_19",
+      "to": "g_gothic",
+      "type": "contains"
+    },
+    {
+      "from": "p_19",
+      "to": "g_romanticism",
+      "type": "contains"
+    },
+    {
+      "from": "p_20",
+      "to": "g_modernism",
+      "type": "contains"
+    },
+    {
+      "from": "p_20",
+      "to": "g_postmodernism",
+      "type": "contains"
+    },
+    {
+      "from": "p_20",
+      "to": "g_existentialism",
+      "type": "contains"
+    },
+    {
+      "from": "p_20",
+      "to": "g_absurdism",
+      "type": "contains"
+    },
+    {
+      "from": "p_20",
+      "to": "g_dystopian",
+      "type": "contains"
+    },
+    {
+      "from": "p_contemporary",
+      "to": "g_postcolonial",
+      "type": "contains"
+    },
+    {
+      "from": "p_contemporary",
+      "to": "g_magical_realism",
+      "type": "contains"
+    },
+    {
+      "from": "g_epic",
+      "to": "w_iliad",
+      "type": "includes"
+    },
+    {
+      "from": "g_epic",
+      "to": "w_odyssey",
+      "type": "includes"
+    },
+    {
+      "from": "g_epic",
+      "to": "w_aeneid",
+      "type": "includes"
+    },
+    {
+      "from": "g_epic",
+      "to": "w_gilgamesh",
+      "type": "includes"
+    },
+    {
+      "from": "g_epic",
+      "to": "w_mahabharata",
+      "type": "includes"
+    },
+    {
+      "from": "g_epic",
+      "to": "w_ramayana",
+      "type": "includes"
+    },
+    {
+      "from": "g_tragedy",
+      "to": "w_oedipus",
+      "type": "includes"
+    },
+    {
+      "from": "g_tragedy",
+      "to": "w_medea",
+      "type": "includes"
+    },
+    {
+      "from": "g_philosophy",
+      "to": "w_republic",
+      "type": "includes"
+    },
+    {
+      "from": "g_philosophy",
+      "to": "w_symposium",
+      "type": "includes"
+    },
+    {
+      "from": "g_realism",
+      "to": "w_les_mis",
+      "type": "includes"
+    },
+    {
+      "from": "g_realism",
+      "to": "w_anna_karenina",
+      "type": "includes"
+    },
+    {
+      "from": "g_realism",
+      "to": "w_crime_punishment",
+      "type": "includes"
+    },
+    {
+      "from": "g_gothic",
+      "to": "w_frankenstein",
+      "type": "includes"
+    },
+    {
+      "from": "g_dystopian",
+      "to": "w_1984",
+      "type": "includes"
+    },
+    {
+      "from": "g_modernism",
+      "to": "w_ulysses",
+      "type": "includes"
+    },
+    {
+      "from": "g_absurdism",
+      "to": "w_godot",
+      "type": "includes"
+    },
+    {
+      "from": "g_existentialism",
+      "to": "w_stranger",
+      "type": "includes"
+    },
+    {
+      "from": "g_postmodernism",
+      "to": "w_pynchon",
+      "type": "includes"
+    },
+    {
+      "from": "g_postcolonial",
+      "to": "w_things_fall_apart",
+      "type": "includes"
+    },
+    {
+      "from": "g_postcolonial",
+      "to": "w_midnight_children",
+      "type": "includes"
+    },
+    {
+      "from": "g_magical_realism",
+      "to": "w_100_years",
+      "type": "includes"
+    },
+    {
+      "from": "r_greece",
+      "to": "r_rome",
+      "type": "influences"
+    },
+    {
+      "from": "r_rome",
+      "to": "r_europe",
+      "type": "influences"
+    },
+    {
+      "from": "r_europe",
+      "to": "r_russia",
+      "type": "influences"
+    },
+    {
+      "from": "r_europe",
+      "to": "r_usa",
+      "type": "influences"
+    },
+    {
+      "from": "r_europe",
+      "to": "r_latam",
+      "type": "influences"
+    },
+    {
+      "from": "r_europe",
+      "to": "r_africa",
+      "type": "influences"
+    },
+    {
+      "from": "r_europe",
+      "to": "r_india",
+      "type": "influences"
+    },
+    {
+      "from": "g_epic",
+      "to": "g_romance",
+      "type": "evolves_to"
+    },
+    {
+      "from": "g_romance",
+      "to": "g_realism",
+      "type": "evolves_to"
+    },
+    {
+      "from": "g_realism",
+      "to": "g_modernism",
+      "type": "evolves_to"
+    },
+    {
+      "from": "g_modernism",
+      "to": "g_postmodernism",
+      "type": "evolves_to"
+    }
+  ]
+}

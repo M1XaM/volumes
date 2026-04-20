@@ -53,21 +53,21 @@ const Bookshelf: React.FC = () => {
     }));
   };
 
-  const periods = volumesData.nodes.filter(n => n.type === 'period');
-  const works = volumesData.nodes.filter(n => n.type === 'work');
-  const genres = volumesData.nodes.filter(n => n.type === 'genre');
-  const regions = volumesData.nodes.filter(n => n.type === 'region');
+  const periods = volumesData.nodes.filter((n: any) => n.type === 'period') as any[];
+  const works = volumesData.nodes.filter((n: any) => n.type === 'work') as Work[];
+  const genres = volumesData.nodes.filter((n: any) => n.type === 'genre') as any[];
+  const regions = volumesData.nodes.filter((n: any) => n.type === 'region') as any[];
   
   const getPeriodForWork = (workId: string) => {
-    const genreEdge = volumesData.edges.find(e => e.to === workId && e.type === 'includes');
+    const genreEdge = volumesData.edges.find((e: any) => e.to === workId && e.type === 'includes');
     if (!genreEdge) return null;
-    const periodEdge = volumesData.edges.find(e => e.to === genreEdge.from && e.type === 'contains');
+    const periodEdge = volumesData.edges.find((e: any) => e.to === genreEdge.from && e.type === 'contains');
     return periodEdge ? periodEdge.from : null;
   };
 
   const getGenreForWork = (workId: string) => {
-    const edge = volumesData.edges.find(e => e.to === workId && e.type === 'includes');
-    return edge ? genres.find(g => g.id === edge.from) : null;
+    const edge = volumesData.edges.find((e: any) => e.to === workId && e.type === 'includes');
+    return edge ? genres.find((g: any) => g.id === edge.from) : null;
   };
 
   return (
@@ -98,7 +98,7 @@ const Bookshelf: React.FC = () => {
           {periods.map(period => {
             const periodWorks = works.filter(work => {
               if (work.genre) {
-                const periodEdge = volumesData.edges.find(e => e.to === work.genre && e.from === period.id && e.type === 'contains');
+                const periodEdge = volumesData.edges.find((e: any) => e.to === work.genre && e.from === period.id && e.type === 'contains');
                 if (periodEdge) return true;
               }
               return getPeriodForWork(work.id) === period.id;

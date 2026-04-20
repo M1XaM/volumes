@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   console.log('App rendering');
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/bookshelf" element={<Bookshelf />} />
