@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    /* ================= PERIODS ================= */
+    { "id": "p_antiquity", "type": "period", "label": "Antiquity", "range": "VIII BC - V AD" },
+    { "id": "p_medieval", "type": "period", "label": "Medieval", "range": "V-XIV" },
+    { "id": "p_renaissance", "type": "period", "label": "Renaissance", "range": "XIV-XVII" },
+    { "id": "p_enlightenment", "type": "period", "label": "Enlightenment", "range": "XVII-XVIII" },
+    { "id": "p_19", "type": "period", "label": "19th Century" },
+    { "id": "p_20", "type": "period", "label": "20th Century" },
+    { "id": "p_contemporary", "type": "period", "label": "Contemporary" },
+
+    /* ================= REGIONS ================= */
+    { "id": "r_greece", "type": "region", "label": "Greece" },
+    { "id": "r_rome", "type": "region", "label": "Rome" },
+    { "id": "r_china", "type": "region", "label": "China" },
+    { "id": "r_india", "type": "region", "label": "India" },
+    { "id": "r_japan", "type": "region", "label": "Japan" },
+    { "id": "r_arabic", "type": "region", "label": "Arabic" },
+    { "id": "r_persian", "type": "region", "label": "Persian" },
+    { "id": "r_europe", "type": "region", "label": "Europe" },
+    { "id": "r_usa", "type": "region", "label": "American" },
+    { "id": "r_russia", "type": "region", "label": "Russian" },
+    { "id": "r_africa", "type": "region", "label": "African" },
+    { "id": "r_latam", "type": "region", "label": "Latin America" },
+
+    /* ================= GENRES ================= */
+    { "id": "g_epic", "type": "genre", "label": "Epic Poetry" },
+    { "id": "g_tragedy", "type": "genre", "label": "Greek Tragedy" },
+    { "id": "g_philosophy", "type": "genre", "label": "Philosophy" },
+    { "id": "g_prose", "type": "genre", "label": "Prose" },
+    { "id": "g_romance", "type": "genre", "label": "Romance" },
+    { "id": "g_realism", "type": "genre", "label": "Realism" },
+    { "id": "g_gothic", "type": "genre", "label": "Gothic" },
+    { "id": "g_romanticism", "type": "genre", "label": "Romanticism" },
+    { "id": "g_modernism", "type": "genre", "label": "Modernism" },
+    { "id": "g_postmodernism", "type": "genre", "label": "Postmodernism" },
+    { "id": "g_existentialism", "type": "genre", "label": "Existentialism" },
+    { "id": "g_absurdism", "type": "genre", "label": "Absurdism" },
+    { "id": "g_dystopian", "type": "genre", "label": "Dystopian" },
+    { "id": "g_magical_realism", "type": "genre", "label": "Magical Realism" },
+    { "id": "g_postcolonial", "type": "genre", "label": "Post-Colonial" },
+
+    /* ================= WORKS: ANTIQUITY ================= */
+    { "id": "w_republic", "type": "work", "label": "The Republic", "author": "Plato" },
+    { "id": "w_symposium", "type": "work", "label": "Symposium", "author": "Plato" },
+    { "id": "w_lucretius", "type": "work", "label": "On the Nature of Things", "author": "Lucretius" },
+    { "id": "w_iliad", "type": "work", "label": "Iliad", "author": "Homer" },
+    { "id": "w_odyssey", "type": "work", "label": "Odyssey", "author": "Homer" },
+    { "id": "w_aeneid", "type": "work", "label": "Aeneid", "author": "Virgil" },
+    { "id": "w_metamorphoses", "type": "work", "label": "Metamorphoses", "author": "Ovid" },
+    { "id": "w_golden_ass", "type": "work", "label": "The Golden Ass", "author": "Apuleius" },
+    { "id": "w_lives", "type": "work", "label": "Lives", "author": "Plutarch" },
+    { "id": "w_oedipus", "type": "work", "label": "Oedipus the King", "author": "Sophocles" },
+    { "id": "w_medea", "type": "work", "label": "Medea", "author": "Euripides" },
+    { "id": "w_gilgamesh", "type": "work", "label": "Epic of Gilgamesh" },
+    { "id": "w_mahabharata", "type": "work", "label": "Mahabharata", "author": "Ved Vyasa" },
+    { "id": "w_ramayana", "type": "work", "label": "Ramayana", "author": "Valmiki" },
+
+    /* ================= MEDIEVAL ================= */
+    { "id": "w_divine_comedy", "type": "work", "label": "The Divine Comedy", "author": "Dante" },
+    { "id": "w_beowulf", "type": "work", "label": "Beowulf" },
+    { "id": "w_roland", "type": "work", "label": "Song of Roland" },
+    { "id": "w_canterbury", "type": "work", "label": "Canterbury Tales", "author": "Chaucer" },
+
+    /* ================= RENAISSANCE / ENLIGHTENMENT ================= */
+    { "id": "w_prince", "type": "work", "label": "The Prince", "author": "Machiavelli" },
+    { "id": "w_montaigne", "type": "work", "label": "Essays", "author": "Montaigne" },
+    { "id": "w_don_quixote", "type": "work", "label": "Don Quixote", "author": "Cervantes" },
+    { "id": "w_hamlet", "type": "work", "label": "Hamlet", "author": "Shakespeare" },
+    { "id": "w_king_lear", "type": "work", "label": "King Lear", "author": "Shakespeare" },
+
+    /* ================= 19TH ================= */
+    { "id": "w_les_mis", "type": "work", "label": "Les Misérables", "author": "Victor Hugo" },
+    { "id": "w_frankenstein", "type": "work", "label": "Frankenstein", "author": "Mary Shelley" },
+    { "id": "w_jane_eyre", "type": "work", "label": "Jane Eyre", "author": "Charlotte Brontë" },
+    { "id": "w_moby_dick", "type": "work", "label": "Moby Dick", "author": "Herman Melville" },
+    { "id": "w_anna_karenina", "type": "work", "label": "Anna Karenina", "author": "Tolstoy" },
+    { "id": "w_crime_punishment", "type": "work", "label": "Crime and Punishment", "author": "Dostoevsky" },
+
+    /* ================= 20TH ================= */
+    { "id": "w_trial", "type": "work", "label": "The Trial", "author": "Kafka" },
+    { "id": "w_godot", "type": "work", "label": "Waiting for Godot", "author": "Beckett" },
+    { "id": "w_stranger", "type": "work", "label": "The Stranger", "author": "Camus" },
+    { "id": "w_1984", "type": "work", "label": "1984", "author": "Orwell" },
+    { "id": "w_ulysses", "type": "work", "label": "Ulysses", "author": "Joyce" },
+    { "id": "w_pynchon", "type": "work", "label": "Gravity’s Rainbow", "author": "Pynchon" },
+
+    /* ================= CONTEMPORARY ================= */
+    { "id": "w_things_fall_apart", "type": "work", "label": "Things Fall Apart", "author": "Achebe" },
+    { "id": "w_midnight_children", "type": "work", "label": "Midnight’s Children", "author": "Rushdie" },
+    { "id": "w_beloved", "type": "work", "label": "Beloved", "author": "Toni Morrison" },
+    { "id": "w_blood_meridian", "type": "work", "label": "Blood Meridian", "author": "McCarthy" },
+    { "id": "w_white_noise", "type": "work", "label": "White Noise", "author": "DeLillo" },
+    { "id": "w_name_of_rose", "type": "work", "label": "The Name of the Rose", "author": "Eco", "region": "r_europe", "genre": "g_postmodernism" },
+    { "id": "w_100_years", "type": "work", "label": "One Hundred Years of Solitude", "author": "Gabriel García Márquez", "region": "r_latam", "genre": "g_magical_realism" }
+  ],
+
+  "edges": [
+    /* PERIOD → GENRE */
+    { "from": "p_antiquity", "to": "g_epic", "type": "contains" },
+    { "from": "p_antiquity", "to": "g_tragedy", "type": "contains" },
+    { "from": "p_antiquity", "to": "g_philosophy", "type": "contains" },
+
+    { "from": "p_medieval", "to": "g_romance", "type": "contains" },
+
+    { "from": "p_19", "to": "g_realism", "type": "contains" },
+    { "from": "p_19", "to": "g_gothic", "type": "contains" },
+    { "from": "p_19", "to": "g_romanticism", "type": "contains" },
+
+    { "from": "p_20", "to": "g_modernism", "type": "contains" },
+    { "from": "p_20", "to": "g_postmodernism", "type": "contains" },
+    { "from": "p_20", "to": "g_existentialism", "type": "contains" },
+    { "from": "p_20", "to": "g_absurdism", "type": "contains" },
+    { "from": "p_20", "to": "g_dystopian", "type": "contains" },
+
+    { "from": "p_contemporary", "to": "g_postcolonial", "type": "contains" },
+    { "from": "p_contemporary", "to": "g_magical_realism", "type": "contains" },
+
+    /* GENRE → WORK */
+    { "from": "g_epic", "to": "w_iliad", "type": "includes" },
+    { "from": "g_epic", "to": "w_odyssey", "type": "includes" },
+    { "from": "g_epic", "to": "w_aeneid", "type": "includes" },
+    { "from": "g_epic", "to": "w_gilgamesh", "type": "includes" },
+    { "from": "g_epic", "to": "w_mahabharata", "type": "includes" },
+    { "from": "g_epic", "to": "w_ramayana", "type": "includes" },
+
+    { "from": "g_tragedy", "to": "w_oedipus", "type": "includes" },
+    { "from": "g_tragedy", "to": "w_medea", "type": "includes" },
+
+    { "from": "g_philosophy", "to": "w_republic", "type": "includes" },
+    { "from": "g_philosophy", "to": "w_symposium", "type": "includes" },
+
+    { "from": "g_realism", "to": "w_les_mis", "type": "includes" },
+    { "from": "g_realism", "to": "w_anna_karenina", "type": "includes" },
+    { "from": "g_realism", "to": "w_crime_punishment", "type": "includes" },
+
+    { "from": "g_gothic", "to": "w_frankenstein", "type": "includes" },
+
+    { "from": "g_dystopian", "to": "w_1984", "type": "includes" },
+
+    { "from": "g_modernism", "to": "w_ulysses", "type": "includes" },
+
+    { "from": "g_absurdism", "to": "w_godot", "type": "includes" },
+
+    { "from": "g_existentialism", "to": "w_stranger", "type": "includes" },
+
+    { "from": "g_postmodernism", "to": "w_pynchon", "type": "includes" },
+
+    { "from": "g_postcolonial", "to": "w_things_fall_apart", "type": "includes" },
+    { "from": "g_postcolonial", "to": "w_midnight_children", "type": "includes" },
+
+    { "from": "g_magical_realism", "to": "w_100_years", "type": "includes" },
+
+    /* REGION → REGION */
+    { "from": "r_greece", "to": "r_rome", "type": "influences" },
+    { "from": "r_rome", "to": "r_europe", "type": "influences" },
+    { "from": "r_europe", "to": "r_russia", "type": "influences" },
+    { "from": "r_europe", "to": "r_usa", "type": "influences" },
+    { "from": "r_europe", "to": "r_latam", "type": "influences" },
+    { "from": "r_europe", "to": "r_africa", "type": "influences" },
+    { "from": "r_europe", "to": "r_india", "type": "influences" },
+
+    /* EVOLUTION */
+    { "from": "g_epic", "to": "g_romance", "type": "evolves_to" },
+    { "from": "g_romance", "to": "g_realism", "type": "evolves_to" },
+    { "from": "g_realism", "to": "g_modernism", "type": "evolves_to" },
+    { "from": "g_modernism", "to": "g_postmodernism", "type": "evolves_to" }
+  ]
+}

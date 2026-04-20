@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Book, Hash, X, User, CheckCircle2, Circle, PenLine } from 'lucide-react';
-import volumesData from '../volumes.json';
+import volumesData from '../docs/nodes.json';
 
 interface Work {
   id: string;
@@ -184,40 +184,20 @@ const Bookshelf: React.FC = () => {
               </button>
 
               <div className="mb-10">
-                <div className="flex items-center space-x-3 mb-4">
+                <h3 className="text-4xl font-black text-slate-950 leading-tight mb-4 mt-6">
+                  {selectedWork.label}
+                </h3>
+                <div className="flex items-center space-x-3 text-slate-600">
+                  <div className="flex items-center space-x-2">
+                    <User className="w-4 h-4 text-slate-400" />
+                    <span className="text-lg font-bold">{selectedWork.author || 'Anonymous'}</span>
+                  </div>
                   <div className="px-3 py-1 bg-slate-100 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
                     {getGenreForWork(selectedWork.id)?.label || 'Work'}
                   </div>
                   <div className="px-3 py-1 bg-slate-100 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
                     {selectedWork.region ? regions.find(r => r.id === selectedWork.region)?.label : 'Unknown Region'}
                   </div>
-                  <button
-                    onClick={() => toggleRead(selectedWork.id)}
-                    className={`ml-auto flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all duration-300 ${
-                      userProgress[selectedWork.id]?.isRead 
-                        ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-200' 
-                        : 'bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-600'
-                    }`}
-                  >
-                    {userProgress[selectedWork.id]?.isRead ? (
-                      <>
-                        <CheckCircle2 className="w-4 h-4" />
-                        <span>Completed</span>
-                      </>
-                    ) : (
-                      <>
-                        <Circle className="w-4 h-4" />
-                        <span>Mark as Read</span>
-                      </>
-                    )}
-                  </button>
-                </div>
-                <h3 className="text-4xl font-black text-slate-950 leading-tight mb-4">
-                  {selectedWork.label}
-                </h3>
-                <div className="flex items-center space-x-2 text-slate-600">
-                  <User className="w-4 h-4 text-slate-400" />
-                  <span className="text-lg font-bold">{selectedWork.author || 'Anonymous'}</span>
                 </div>
               </div>
 
@@ -265,7 +245,27 @@ const Bookshelf: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-12 flex justify-end">
+              <div className="mt-12 flex items-center justify-between">
+                <button
+                  onClick={() => toggleRead(selectedWork.id)}
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-2xl text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
+                    userProgress[selectedWork.id]?.isRead 
+                      ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-200' 
+                      : 'bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-600'
+                  }`}
+                >
+                  {userProgress[selectedWork.id]?.isRead ? (
+                    <>
+                      <CheckCircle2 className="w-5 h-5" />
+                      <span>Completed</span>
+                    </>
+                  ) : (
+                    <>
+                      <Circle className="w-5 h-5" />
+                      <span>Mark as Read</span>
+                    </>
+                  )}
+                </button>
                 <button 
                   onClick={() => setSelectedWork(null)}
                   className="px-8 py-3 bg-slate-900 text-white rounded-2xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200"
