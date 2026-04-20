@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Book, Hash, X, User, CheckCircle2, Circle, PenLine } from 'lucide-react';
+import { ArrowLeft, Book, Hash, User, CheckCircle2, Circle, PenLine, Loader2 } from 'lucide-react';
 import volumesData from '../docs/nodes.json';
 
 interface Work {
@@ -23,6 +23,11 @@ interface UserProgress {
 
 const Bookshelf: React.FC = () => {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
+  const [isbn, setIsbn] = useState<string | null>(null);
+  const [isbns, setIsbns] = useState<string[]>([]);
+  const [previewAvailable, setPreviewAvailable] = useState<boolean>(false);
+  const [isFetchingIsbn, setIsFetchingIsbn] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
   const [userProgress, setUserProgress] = useState<UserProgress>(() => {
     const saved = localStorage.getItem('volumes-user-progress');
     return saved ? JSON.parse(saved) : {};
@@ -31,6 +36,116 @@ const Bookshelf: React.FC = () => {
   useEffect(() => {
     localStorage.setItem('volumes-user-progress', JSON.stringify(userProgress));
   }, [userProgress]);
+
+  useEffect(() => {
+    if (!selectedWork) {
+      setIsbn(null);
+      setIsbns([]);
+      setShowPreview(false);
+      setIsFetchingIsbn(false);
+      setPreviewAvailable(false);
+      return;
+    }
+    const fetchIsbn = async () => {
+      setIsFetchingIsbn(true);
+      setPreviewAvailable(false);
+      try {
+        const title = selectedWork.label;
+        const author = selectedWork.author || '';
+        const res = await fetch(`https://openlibrary.org/search.json?title=${encodeURIComponent(title)}&author=${encodeURIComponent(author)}&fields=isbn`);
+        const data = await res.json();
+        
+        let collectedIsbns: string[] = [];
+        if (data && data.docs) {
+          data.docs.slice(0, 3).forEach((doc: any) => {
+            if (doc.isbn) {
+              collectedIsbns.push(...doc.isbn.slice(0, 5));
+            }
+          });
+        }
+        
+        const foundIsbn = collectedIsbns[0];
+        if (foundIsbn) {
+          setIsbn(foundIsbn);
+          setIsbns(collectedIsbns);
+
+          // Check against Google Books Dynamic Link API securely via JSONP
+          const bibkeys = collectedIsbns.slice(0, 15).map(i => `ISBN:${i}`).join(',');
+          if (bibkeys.length > 0) {
+            await new Promise<void>((resolve) => {
+              const callbackName = `gb_cb_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
+              // @ts-ignore
+              window[callbackName] = (gbObj: any) => {
+                // Clean up global namespace
+                // @ts-ignore
+                delete window[callbackName];
+                const scriptTag = document.getElementById(callbackName);
+                if (scriptTag) scriptTag.remove();
+
+                if (gbObj) {
+                  const hasPreview = Object.values(gbObj).some((info: any) => info.embeddable);
+                  setPreviewAvailable(hasPreview);
+                }
+                resolve();
+              };
+
+              const script = document.createElement('script');
+              script.id = callbackName;
+              script.src = `https://books.google.com/books?jscmd=viewapi&bibkeys=${bibkeys}&callback=${callbackName}`;
+              script.onerror = () => {
+                console.error("Failed to check Google Preview");
+                resolve();
+              };
+              document.head.appendChild(script);
+            });
+          }
+        } else {
+          setIsbn(null);
+          setIsbns([]);
+        }
+      } catch (err) {
+        console.error("Failed to fetch ISBN:", err);
+        setIsbn(null);
+        setIsbns([]);
+      } finally {
+        setIsFetchingIsbn(false);
+      }
+    };
+    fetchIsbn();
+  }, [selectedWork]);
+
+  useEffect(() => {
+    if (!showPreview || !isbn || isbns.length === 0) return;
+
+    let viewer: any = null;
+
+    const initViewer = () => {
+      // @ts-ignore
+      if (window.google?.books?.DefaultViewer) {
+        const container = document.getElementById('google-books-viewer');
+        if (container) {
+          // @ts-ignore
+          viewer = new window.google.books.DefaultViewer(container);
+          const identifiers = isbns.map(i => `ISBN:${i}`);
+          viewer.load(identifiers, () => {
+            container.innerHTML = '<div class="flex items-center justify-center p-8 text-slate-500 font-medium h-full">Preview not available for this book.</div>';
+          }, () => {
+            console.log('Google Books viewer loaded successfully');
+          });
+        }
+      }
+    };
+
+    // @ts-ignore
+    if (window.google?.books?.DefaultViewer) {
+       // already loaded
+       initViewer();
+    // @ts-ignore
+    } else if (window.google?.books) {
+       // @ts-ignore
+       window.google.books.setOnLoadCallback(initViewer);
+    }
+  }, [showPreview, isbn]);
 
   const toggleRead = (workId: string) => {
     setUserProgress(prev => ({
@@ -176,22 +291,21 @@ const Bookshelf: React.FC = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative p-8 sm:p-12">
-              <button 
-                onClick={() => setSelectedWork(null)}
-                className="absolute top-6 right-6 p-2 rounded-full bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-900 transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
               <div className="mb-10">
                 <h3 className="text-4xl font-black text-slate-950 leading-tight mb-4 mt-6">
                   {selectedWork.label}
                 </h3>
-                <div className="flex items-center space-x-3 text-slate-600">
+                <div className="flex items-center space-x-3 text-slate-600 flex-wrap gap-y-2">
                   <div className="flex items-center space-x-2">
                     <User className="w-4 h-4 text-slate-400" />
                     <span className="text-lg font-bold">{selectedWork.author || 'Anonymous'}</span>
                   </div>
+                  {isbn && (
+                    <div className="flex items-center space-x-2 px-3 border-l border-slate-300">
+                      <Hash className="w-4 h-4 text-slate-400" />
+                      <span className="text-sm font-semibold tracking-wide text-slate-500">ISBN: {isbn}</span>
+                    </div>
+                  )}
                   <div className="px-3 py-1 bg-slate-100 rounded-lg text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
                     {getGenreForWork(selectedWork.id)?.label || 'Work'}
                   </div>
@@ -221,6 +335,18 @@ const Bookshelf: React.FC = () => {
                     <p className="text-base text-slate-500 leading-relaxed">
                       {selectedWork.authorDescription || 'No description available for this author.'}
                     </p>
+                  </div>
+                )}
+
+                {showPreview && isbn && (
+                  <div className="pt-8 border-t border-slate-300 animate-in fade-in slide-in-from-top-4 duration-500">
+                    <h4 className="flex items-center space-x-2 text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
+                      <Book className="w-3.5 h-3.5" />
+                      <span>Google Books Preview</span>
+                    </h4>
+                    <div className="w-full h-[500px] rounded-xl overflow-hidden border border-slate-200 shadow-inner bg-slate-50">
+                      <div id="google-books-viewer" className="w-full h-full bg-white"></div>
+                    </div>
                   </div>
                 )}
 
@@ -266,6 +392,42 @@ const Bookshelf: React.FC = () => {
                     </>
                   )}
                 </button>
+                
+                <div className="relative group inline-block">
+                  {!isFetchingIsbn && !previewAvailable && (
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 px-3 py-2 bg-slate-800 text-white text-xs font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 whitespace-nowrap z-50 pointer-events-none shadow-xl">
+                      Preview not available
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-4 border-transparent border-t-slate-800"></div>
+                    </div>
+                  )}
+                  <button
+                    onClick={() => {
+                      if (!isFetchingIsbn && previewAvailable) setShowPreview(!showPreview);
+                    }}
+                    disabled={isFetchingIsbn || (!isFetchingIsbn && !previewAvailable)}
+                    className={`flex items-center space-x-2 px-6 py-3 rounded-2xl font-bold text-sm tracking-widest uppercase transition-all duration-300 border shadow-sm ${
+                      isFetchingIsbn 
+                        ? 'bg-blue-50 text-blue-600 border-blue-200 opacity-60 cursor-wait' 
+                        : !previewAvailable
+                          ? 'bg-slate-100 text-slate-400 border-slate-200 !pointer-events-none'
+                          : 'bg-blue-50 text-blue-600 border-blue-200 hover:bg-blue-100 hover:shadow-md'
+                    }`}
+                  >
+                    {isFetchingIsbn ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        <span>Loading...</span>
+                      </>
+                    ) : (
+                      <span>{showPreview ? 'Hide Preview' : 'See Preview'}</span>
+                    )}
+                  </button>
+                  {/* Invisible overlay to catch mouse events for the tooltip since disabled buttons drop them */}
+                  {!isFetchingIsbn && !previewAvailable && (
+                    <div className="absolute inset-0 cursor-not-allowed z-10"></div>
+                  )}
+                </div>
+
                 <button 
                   onClick={() => setSelectedWork(null)}
                   className="px-8 py-3 bg-slate-900 text-white rounded-2xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200"
