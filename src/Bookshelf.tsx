@@ -72,26 +72,16 @@ const Bookshelf: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-slate-200">
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-4 shadow-sm">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <Link to="/" className="inline-flex items-center space-x-2 text-slate-600 hover:text-slate-950 font-bold tracking-tight transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm uppercase tracking-widest">Volumes</span>
-          </Link>
-          <div className="flex items-center space-x-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Total: {works.length} Works</span>
-          </div>
-        </div>
-      </nav>
-
       <div className="max-w-6xl mx-auto px-6 py-20">
+        <Link to="/" className="inline-flex items-center space-x-2 text-slate-400 hover:text-slate-950 font-bold tracking-tight transition-colors mb-16">
+          <ArrowLeft className="w-5 h-5" />
+          <span className="text-sm uppercase tracking-widest">Volumes</span>
+        </Link>
+
         <header className="mb-24 text-center">
           <h2 className="text-5xl font-extrabold tracking-tight text-slate-950 mb-6">
-            The Digital Bookshelf
+            The Bookshelf
           </h2>
-          <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto">
-            Organized by Epoch and Genre.
-          </p>
         </header>
         
         <div className="space-y-32">
@@ -136,7 +126,7 @@ const Bookshelf: React.FC = () => {
                               {genreLabel}
                             </h4>
                             <div className="w-8 h-1 bg-slate-200 mb-4 rounded-full"></div>
-                            <p className="text-xs text-slate-400 font-medium">{genreWorks.length} Essential {genreWorks.length === 1 ? 'Work' : 'Works'}</p>
+                            <p className="text-xs text-slate-400 font-medium">{genreWorks.length} {genreWorks.length === 1 ? 'Work' : 'Works'}</p>
                           </div>
                         </div>
                         <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-8">

@@ -18,12 +18,18 @@ const Landing: React.FC = () => {
           <p className="mt-4 text-sm font-bold uppercase tracking-widest text-slate-400">— Italo Calvino</p>
         </div>
 
-        <div className="pt-4">
+        <div className="pt-4 flex flex-col items-center space-y-4">
           <Link
             to="/bookshelf"
-            className="inline-flex items-center px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
+            className="inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
           >
             Explore The Bookshelf
+          </Link>
+          <Link
+            to="/why"
+            className="inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-white text-slate-900 border border-slate-200 rounded-full hover:bg-slate-50 transition-all duration-300 shadow-sm hover:shadow hover:-translate-y-1 font-semibold text-lg"
+          >
+            Explore The Why
           </Link>
         </div>
       </main>
