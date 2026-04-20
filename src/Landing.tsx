@@ -11,7 +11,7 @@ const Landing: React.FC = () => {
           </h1>
         </header>
 
-        <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm max-w-lg mx-auto">
+        <div className="bg-white p-8 rounded-3xl border border-slate-400 shadow-sm max-w-lg mx-auto">
           <p className="text-lg font-normal text-slate-700 italic leading-relaxed">
             "The classics are those books which come to us bearing the aura of previous interpretations."
           </p>
@@ -27,7 +27,7 @@ const Landing: React.FC = () => {
           </Link>
           <Link
             to="/why"
-            className="inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-white text-slate-900 border border-slate-200 rounded-full hover:bg-slate-50 transition-all duration-300 shadow-sm hover:shadow hover:-translate-y-1 font-semibold text-lg"
+            className="inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
           >
             Explore The Why
           </Link>

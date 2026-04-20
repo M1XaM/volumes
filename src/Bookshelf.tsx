@@ -118,7 +118,7 @@ const Bookshelf: React.FC = () => {
                 
                 <div className="space-y-16">
                   {Object.entries(worksByGenre).map(([genreLabel, genreWorks]) => (
-                    <div key={genreLabel} className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
+                    <div key={genreLabel} className="bg-white rounded-3xl p-8 border border-slate-400 shadow-sm">
                       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         <div className="md:col-span-1">
                           <div className="sticky top-24">
@@ -134,7 +134,7 @@ const Bookshelf: React.FC = () => {
                             <div 
                               key={work.id} 
                               onClick={() => setSelectedWork(work)}
-                              className="p-6 bg-slate-50/50 rounded-2xl hover:bg-slate-100/50 transition-all duration-300 border border-transparent hover:border-slate-200 group cursor-pointer"
+                              className="p-6 bg-slate-50/50 rounded-2xl hover:bg-slate-100/50 transition-all duration-300 border border-transparent hover:border-slate-400 group cursor-pointer"
                             >
                               <div className="flex items-start space-x-4">
                                 <Book className="w-5 h-5 text-slate-400 mt-1" />
@@ -150,7 +150,7 @@ const Bookshelf: React.FC = () => {
                                   <p className="text-slate-600 font-semibold mb-3">
                                     {work.author || 'Anonymous'}
                                   </p>
-                                  <div className="inline-block px-3 py-1 bg-white border border-slate-200 rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                                  <div className="inline-block px-3 py-1 bg-white border border-slate-400 rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-400">
                                     {work.region ? regions.find(r => r.id === work.region)?.label : 'Unknown Region'}
                                   </div>
                                 </div>
@@ -233,7 +233,7 @@ const Bookshelf: React.FC = () => {
                 </div>
 
                 {selectedWork.author && (
-                  <div className="pt-8 border-t border-slate-100">
+                  <div className="pt-8 border-t border-slate-300">
                     <h4 className="flex items-center space-x-2 text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
                       <User className="w-3.5 h-3.5" />
                       <span>About the Author</span>
@@ -244,7 +244,7 @@ const Bookshelf: React.FC = () => {
                   </div>
                 )}
 
-                <div className="pt-8 border-t border-slate-100">
+                <div className="pt-8 border-t border-slate-300">
                   <div className="flex items-center justify-between mb-4">
                     <h4 className="flex items-center space-x-2 text-xs font-black uppercase tracking-[0.2em] text-slate-400">
                       <PenLine className="w-3.5 h-3.5" />
@@ -260,7 +260,7 @@ const Bookshelf: React.FC = () => {
                     value={userProgress[selectedWork.id]?.notes || ''}
                     onChange={(e) => updateNotes(selectedWork.id, e.target.value.slice(0, 512))}
                     placeholder="Reflect on this work..."
-                    className="w-full h-32 p-4 bg-slate-50 rounded-2xl border border-slate-100 focus:border-slate-300 focus:ring-4 focus:ring-slate-100 outline-none resize-none text-slate-600 font-medium placeholder:text-slate-300 transition-all duration-300"
+                    className="w-full h-32 p-4 bg-slate-50 rounded-2xl border border-slate-300 focus:border-slate-300 focus:ring-4 focus:ring-slate-100 outline-none resize-none text-slate-600 font-medium placeholder:text-slate-300 transition-all duration-300"
                   />
                 </div>
               </div>
