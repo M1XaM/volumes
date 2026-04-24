@@ -193,8 +193,8 @@ const Bookshelf: React.FC = () => {
           <span className="text-sm uppercase tracking-widest">Volumes</span>
         </Link>
 
-        <header className="mb-24 text-center">
-          <h2 className="text-5xl font-extrabold tracking-tight text-slate-950 mb-6">
+        <header className="mb-16 md:mb-24 text-center">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-950 mb-4 md:mb-6">
             The Bookshelf
           </h2>
         </header>
@@ -223,7 +223,7 @@ const Bookshelf: React.FC = () => {
               <section key={period.id} className="animate-fade-in">
                 <div className="bg-slate-900 text-white p-8 rounded-3xl shadow-xl flex flex-col md:flex-row md:items-center md:justify-between mb-12 transform -rotate-1">
                   <div>
-                    <h3 className="text-4xl font-extrabold tracking-tight">{period.label}</h3>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{period.label}</h3>
                     <p className="text-slate-400 font-bold uppercase tracking-widest text-sm mt-2">{period.range}</p>
                   </div>
                   <div className="mt-4 md:mt-0 flex items-center space-x-4">
@@ -287,12 +287,12 @@ const Bookshelf: React.FC = () => {
       {selectedWork && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-slate-950/40 backdrop-blur-sm animate-in fade-in duration-300">
           <div 
-            className="w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-8 duration-500"
+            className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white rounded-[2rem] shadow-2xl animate-in zoom-in-95 slide-in-from-bottom-8 duration-500"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative p-8 sm:p-12">
               <div className="mb-10">
-                <h3 className="text-4xl font-black text-slate-950 leading-tight mb-4 mt-6">
+                <h3 className="text-3xl md:text-4xl font-black text-slate-950 leading-tight mb-4 mt-6">
                   {selectedWork.label}
                 </h3>
                 <div className="flex items-center space-x-3 text-slate-600 flex-wrap gap-y-2">
@@ -371,10 +371,10 @@ const Bookshelf: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-12 flex items-center justify-between">
+              <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
                 <button
                   onClick={() => toggleRead(selectedWork.id)}
-                  className={`flex items-center space-x-2 px-6 py-3 rounded-2xl text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
+                  className={`w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3 rounded-2xl text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
                     userProgress[selectedWork.id]?.isRead 
                       ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-200' 
                       : 'bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-600'
@@ -393,7 +393,7 @@ const Bookshelf: React.FC = () => {
                   )}
                 </button>
                 
-                <div className="relative group inline-block">
+                <div className="relative group inline-block w-full sm:w-auto">
                   {!isFetchingIsbn && !previewAvailable && (
                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 px-3 py-2 bg-slate-800 text-white text-xs font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 whitespace-nowrap z-50 pointer-events-none shadow-xl">
                       Preview not available
@@ -405,7 +405,7 @@ const Bookshelf: React.FC = () => {
                       if (!isFetchingIsbn && previewAvailable) setShowPreview(!showPreview);
                     }}
                     disabled={isFetchingIsbn || (!isFetchingIsbn && !previewAvailable)}
-                    className={`flex items-center space-x-2 px-6 py-3 rounded-2xl font-bold text-sm tracking-widest uppercase transition-all duration-300 border shadow-sm ${
+                    className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-2xl font-bold text-sm tracking-widest uppercase transition-all duration-300 border shadow-sm ${
                       isFetchingIsbn 
                         ? 'bg-blue-50 text-blue-600 border-blue-200 opacity-60 cursor-wait' 
                         : !previewAvailable
@@ -430,7 +430,7 @@ const Bookshelf: React.FC = () => {
 
                 <button 
                   onClick={() => setSelectedWork(null)}
-                  className="px-8 py-3 bg-slate-900 text-white rounded-2xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200"
+                  className="w-full sm:w-auto px-8 py-3 bg-slate-900 text-white rounded-2xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200 text-center"
                 >
                   Close
                 </button>

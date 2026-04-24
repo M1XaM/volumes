@@ -13,7 +13,7 @@ const Why: React.FC = () => {
         </Link>
         
         <article className="prose prose-slate lg:prose-lg mx-auto">
-          <h1 className="text-5xl font-black text-slate-950 tracking-tight mb-12 text-center text-balance leading-tight">
+          <h1 className="text-4xl md:text-5xl font-black text-slate-950 tracking-tight mb-8 md:mb-12 text-center text-balance leading-tight">
             Why Literature Matters
           </h1>
           
