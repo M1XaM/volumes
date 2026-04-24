@@ -378,7 +378,7 @@
     {
       "id": "w_les_mis",
       "type": "work",
-      "label": "Les Mis\u00e9rables",
+      "label": "Les Misérables",
       "author": "Victor Hugo",
       "region": "r_europe",
       "description": "Les Mis\u00e9rables (, French: [le mize\u0281abl] ) is a French epic historical novel by Victor Hugo, first published on 31 March 1862, that is considered one of the greatest novels of the 19th century. Les Mis\u00e9rables has been popularized through numerous adaptations for film, television, and the stage, including a musical.",
@@ -477,7 +477,7 @@
     {
       "id": "w_pynchon",
       "type": "work",
-      "label": "Gravity\u2019s Rainbow",
+      "label": "Gravity’s Rainbow",
       "author": "Pynchon",
       "region": "r_usa",
       "description": "A complex, postmodern novel exploring themes of paranoia, determinism, and technology, set mainly in Europe at the end of World War II.",
@@ -495,7 +495,7 @@
     {
       "id": "w_midnight_children",
       "type": "work",
-      "label": "Midnight\u2019s Children",
+      "label": "Midnight’s Children",
       "author": "Rushdie",
       "region": "r_india",
       "description": "A magical realist novel dealing with India's transition from British colonialism to independence, following children born at the exact moment of partition.",
@@ -542,7 +542,7 @@
       "id": "w_100_years",
       "type": "work",
       "label": "One Hundred Years of Solitude",
-      "author": "Gabriel Garc\u00eda M\u00e1rquez",
+      "author": "Gabriel García Márquez",
       "region": "r_latam",
       "genre": "g_magical_realism",
       "description": "A landmark novel outlining the multi-generational story of the Buend\u00eda family in the fictional town of Macondo, establishing the magic realism genre.",
