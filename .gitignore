@@ -24,9 +24,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Project specific
-MustRead.pdf
-volumes.png
-plan
-docs/plan

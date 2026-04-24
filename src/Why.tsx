@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import volumesMap from '../docs/volumes.png';
+import volumesMap from './assets/volumes.png';
 
 const Why: React.FC = () => {
   return (
