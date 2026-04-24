@@ -18,18 +18,18 @@ const Landing: React.FC = () => {
           <p className="mt-4 text-sm font-bold uppercase tracking-widest text-slate-400">— Italo Calvino</p>
         </div>
 
-        <div className="pt-4 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-          <Link
-            to="/bookshelf"
-            className="w-full md:w-auto inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
-          >
-            Explore The Bookshelf
-          </Link>
+        <div className="pt-4 flex flex-col items-center justify-center space-y-4">
           <Link
             to="/why"
-            className="w-full md:w-auto inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
+            className="w-full sm:w-auto inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
           >
             Explore The Why
+          </Link>
+          <Link
+            to="/bookshelf"
+            className="w-full sm:w-auto inline-flex items-center justify-center min-w-[280px] px-10 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-semibold text-lg"
+          >
+            Explore The Bookshelf
           </Link>
         </div>
       </main>

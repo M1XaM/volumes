@@ -188,8 +188,8 @@
       "type": "work",
       "label": "Symposium",
       "author": "Plato",
-      "authorDescription": "A foundational figure in Western philosophy and the founder of the Academy in Athens, the first institution of higher learning in the Western world.",
-      "description": "A philosophical text by Plato dated c. 385–370 BC. It depicts a friendly contest of extemporaneous speeches given by a group of notable men attending a banquet.",
+      "authorDescription": "A foundational figure in Western philosophy who documented Socratic dialogues and founded the Academy in Athens.",
+      "description": "A classic philosophical text depicting a banquet where notable Athenians discuss the nature of love (Eros), ultimately defining it as a pursuit of truth and beauty.",
       "region": "r_greece"
     },
     {
@@ -244,7 +244,7 @@
       "author": "Apuleius",
       "region": "r_rome",
       "description": "The Metamorphoses of Apuleius, which Augustine of Hippo referred to as The Golden Ass (Latin: Asinus aureus), is the only ancient Roman novel in Latin to survive in its entirety. The protagonist of the novel is Lucius.",
-      "authorDescription": "Apuleius ( APP-yuu-LEE-əs), also called Lucius Apuleius Madaurensis (c. 124 – after  170), was a Numidian Latin-language prose writer, Platonist philosopher and rhetorician."
+      "authorDescription": "Apuleius ( APP-yuu-LEE-\u0259s), also called Lucius Apuleius Madaurensis (c. 124 \u2013 after  170), was a Numidian Latin-language prose writer, Platonist philosopher and rhetorician."
     },
     {
       "id": "w_lives",
@@ -253,7 +253,7 @@
       "author": "Plutarch",
       "region": "r_rome",
       "description": "Lives may refer to:",
-      "authorDescription": "Plutarch (; Ancient Greek: Πλούταρχος, Ploútarchos, Koine Greek: [ˈplúːtarkʰos]; before AD 50 – after 120) was a Greek and later Roman Middle Platonist philosopher, historian, biographer, essayist, and priest at the Temple of Apollo in Delphi. He is known primarily for his Parallel Lives, a series of biographies of illustrious Greeks and Romans, and Moralia, a collection of essays and speeches."
+      "authorDescription": "Plutarch (; Ancient Greek: \u03a0\u03bb\u03bf\u03cd\u03c4\u03b1\u03c1\u03c7\u03bf\u03c2, Plo\u00fatarchos, Koine Greek: [\u02c8pl\u00fa\u02d0tark\u02b0os]; before AD 50 \u2013 after 120) was a Greek and later Roman Middle Platonist philosopher, historian, biographer, essayist, and priest at the Temple of Apollo in Delphi. He is known primarily for his Parallel Lives, a series of biographies of illustrious Greeks and Romans, and Moralia, a collection of essays and speeches."
     },
     {
       "id": "w_oedipus",
@@ -261,8 +261,8 @@
       "label": "Oedipus the King",
       "author": "Sophocles",
       "region": "r_greece",
-      "description": "A notable literary work.",
-      "authorDescription": "Sophocles (; Ancient Greek: Σοφοκλῆς, pronounced [so.pʰo.klɛ̂ːs], Sophoklễs; c. 497/496 – winter 406/405 BC) was an ancient Greek tragedian, one of three from whom at least two plays have survived in full."
+      "description": "A tragic play about a king who unknowingly fulfills a prophecy that he will kill his father and marry his mother, exploring themes of fate and free will.",
+      "authorDescription": "One of the three ancient Greek tragedians whose work has survived, known for his deep psychological insight."
     },
     {
       "id": "w_medea",
@@ -270,15 +270,15 @@
       "label": "Medea",
       "author": "Euripides",
       "region": "r_greece",
-      "description": "In Greek mythology, Medea (; Ancient Greek: Μήδεια, romanized: Mḗdeia; lit. 'planner, schemer') is the daughter of King Aeëtes of Colchis. Medea is known in most stories as a sorceress, an accomplished pharmakís, a worker in pharmakeía (medicinal magic), and is often depicted as a high priestess of the goddess Hecate.",
-      "authorDescription": "Euripides (; Ancient Greek: Eὐριπίδης, romanized: Eurīpídēs, pronounced [eu̯.riː.pí.dɛːs]; c. 480 – c. 406 BC) was a Greek tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three authors of Greek tragedy for whom any plays have survived in full."
+      "description": "In Greek mythology, Medea (; Ancient Greek: \u039c\u03ae\u03b4\u03b5\u03b9\u03b1, romanized: M\u1e17deia; lit.\u2009'planner, schemer') is the daughter of King Ae\u00ebtes of Colchis. Medea is known in most stories as a sorceress, an accomplished pharmak\u00eds, a worker in pharmake\u00eda (medicinal magic), and is often depicted as a high priestess of the goddess Hecate.",
+      "authorDescription": "Euripides (; Ancient Greek: E\u1f50\u03c1\u03b9\u03c0\u03af\u03b4\u03b7\u03c2, romanized: Eur\u012bp\u00edd\u0113s, pronounced [eu\u032f.ri\u02d0.p\u00ed.d\u025b\u02d0s]; c.\u2009480 \u2013 c.\u2009406 BC) was a Greek tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three authors of Greek tragedy for whom any plays have survived in full."
     },
     {
       "id": "w_gilgamesh",
       "type": "work",
       "label": "Epic of Gilgamesh",
       "region": "r_persian",
-      "description": "The Epic of Gilgamesh () is an epic from ancient Mesopotamia. The literary history of Gilgamesh begins with five Sumerian poems about Gilgamesh (the variant \"Bilgames\" was once thought to be the earlier Sumerian form), king of Uruk, some of which may date back to the Third Dynasty of Ur (c. 2100 BCE)."
+      "description": "The Epic of Gilgamesh () is an epic from ancient Mesopotamia. The literary history of Gilgamesh begins with five Sumerian poems about Gilgamesh (the variant \"Bilgames\" was once thought to be the earlier Sumerian form), king of Uruk, some of which may date back to the Third Dynasty of Ur (c.\u20092100 BCE)."
     },
     {
       "id": "w_mahabharata",
@@ -286,8 +286,8 @@
       "label": "Mahabharata",
       "author": "Ved Vyasa",
       "region": "r_india",
-      "description": "The Mahābhārata ( mə-HAH-BAR-ə-tə, MAH-hə-; Sanskrit: महाभारतम्, IAST: Mahābhāratam, pronounced [mɐɦaːˈbʱaːrɐt̪ɐm]) is a smriti text (also described as a Sanskrit epic) from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Ramayana. It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, the Kauravas and the Pāṇḍavas.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "One of the two major Sanskrit epics of ancient India, detailing the Kurukshetra War and the fates of the Kaurava and Pandava princes, embedding Hindu philosophy.",
+      "authorDescription": "A revered sage in Hindu traditions, traditionally credited as the author and a character within the epic itself."
     },
     {
       "id": "w_ramayana",
@@ -295,8 +295,8 @@
       "label": "Ramayana",
       "author": "Valmiki",
       "region": "r_india",
-      "description": "The Ramayana (; Sanskrit: रामायणम्, romanized: Rāmāyaṇam), also known as the Valmiki Ramayana, as traditionally attributed to Valmiki, is a Hindu smriti epic poem (also described as a Sanskrit epic) from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who was a prince of Ayodhya in the kingdom of Kosala.",
-      "authorDescription": "Valmiki (; Sanskrit: वाल्मीकि, romanized: Vālmīki, lit. 'from an anthill', [ʋɑːlmiːki]) was a legendary poet and Hindu maharishi (sage) who is celebrated as the traditional author of the smriti epic Ramayana, one of Hinduism's two Itihasas, based on the attribution in the text itself. He is revered as Ādi Kavi (Sanskrit: आदिकवि), the first poet, author of Ramayana, the first epic poem."
+      "description": "The Ramayana (; Sanskrit: \u0930\u093e\u092e\u093e\u092f\u0923\u092e\u094d, romanized: R\u0101m\u0101ya\u1e47am), also known as the Valmiki Ramayana, as traditionally attributed to Valmiki, is a Hindu smriti epic poem (also described as a Sanskrit epic) from ancient India, one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, the seventh avatar of the Hindu deity Vishnu, who was a prince of Ayodhya in the kingdom of Kosala.",
+      "authorDescription": "Valmiki (; Sanskrit: \u0935\u093e\u0932\u094d\u092e\u0940\u0915\u093f, romanized: V\u0101lm\u012bki, lit.\u2009'from an anthill', [\u028b\u0251\u02d0lmi\u02d0ki]) was a legendary poet and Hindu maharishi (sage) who is celebrated as the traditional author of the smriti epic Ramayana, one of Hinduism's two Itihasas, based on the attribution in the text itself. He is revered as \u0100di Kavi (Sanskrit: \u0906\u0926\u093f\u0915\u0935\u093f), the first poet, author of Ramayana, the first epic poem."
     },
     {
       "id": "w_divine_comedy",
@@ -304,15 +304,15 @@
       "label": "The Divine Comedy",
       "author": "Dante",
       "region": "r_europe",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An epic poem presenting a journey through Hell, Purgatory, and Paradise, representing the soul's journey towards God and standing as a pinnacle of world literature.",
+      "authorDescription": "A major Italian poet of the Late Middle Ages whose masterpiece established the modern Italian language."
     },
     {
       "id": "w_beowulf",
       "type": "work",
       "label": "Beowulf",
       "region": "r_europe",
-      "description": "Beowulf ( ; Old English: Bēowulf [ˈbeːowuɫf]) is an Old English poem, an epic in the tradition of Germanic heroic legend consisting of 3,182 alliterative lines, contained in the Nowell Codex. It is one of the most important and most often translated works of Old English literature."
+      "description": "Beowulf ( ; Old English: B\u0113owulf [\u02c8be\u02d0owu\u026bf]) is an Old English poem, an epic in the tradition of Germanic heroic legend consisting of 3,182 alliterative lines, contained in the Nowell Codex. It is one of the most important and most often translated works of Old English literature."
     },
     {
       "id": "w_roland",
@@ -327,8 +327,8 @@
       "label": "Canterbury Tales",
       "author": "Chaucer",
       "region": "r_europe",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A collection of 24 stories presented as part of a story-telling contest by a group of pilgrims traveling to Canterbury, rich in irony and social critique.",
+      "authorDescription": "Widely considered the greatest English poet of the Middle Ages and the Father of English literature."
     },
     {
       "id": "w_prince",
@@ -336,8 +336,8 @@
       "label": "The Prince",
       "author": "Machiavelli",
       "region": "r_europe",
-      "description": "The Prince (Italian: Il Principe [il ˈprintʃipe]; Latin: De Principatibus) is a 16th-century political treatise written by the Italian diplomat, philosopher, and political theorist Niccolò Machiavelli in the form of a realistic instruction guide for new princes. Many commentators have viewed that one of the main themes of The Prince is that immoral acts are sometimes necessary to achieve political glory.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A political treatise providing unsentimental advice on how to acquire and maintain political power, often cited as the first work of modern political philosophy.",
+      "authorDescription": "An Italian Renaissance diplomat, philosopher, and writer known as the father of modern political philosophy."
     },
     {
       "id": "w_montaigne",
@@ -345,8 +345,8 @@
       "label": "Essays",
       "author": "Montaigne",
       "region": "r_europe",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A massive collection of essays covering a wide range of topics that popularized the essay as a literary genre, marked by deep skepticism and humanist introspection.",
+      "authorDescription": "One of the most significant philosophers of the French Renaissance, known for popularizing the essay form."
     },
     {
       "id": "w_don_quixote",
@@ -354,8 +354,8 @@
       "label": "Don Quixote",
       "author": "Cervantes",
       "region": "r_europe",
-      "description": "Don Quixote, the full title being The Ingenious Gentleman Don Quixote of La Mancha, is a Spanish novel by Miguel de Cervantes. Originally published in two parts in 1605 and 1615, the novel is considered a founding work of Western literature and the first modern novel.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A foundational work of Western literature following the adventures of an aging nobleman who becomes a knight-errant after reading too many chivalric romances.",
+      "authorDescription": "A Spanish writer widely regarded as the greatest writer in the Spanish language and one of the world's pre-eminent novelists."
     },
     {
       "id": "w_hamlet",
@@ -363,8 +363,8 @@
       "label": "Hamlet",
       "author": "Shakespeare",
       "region": "r_europe",
-      "description": "The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet (), is a tragedy written by William Shakespeare sometime between 1599 and 1601. It is Shakespeare's longest play.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A tragedy following Prince Hamlet's pursuit of revenge against his uncle, exploring themes of treachery, revenge, incest, and moral corruption.",
+      "authorDescription": "The quintessential English playwright and poet, widely regarded as the greatest writer in the English language."
     },
     {
       "id": "w_king_lear",
@@ -372,17 +372,17 @@
       "label": "King Lear",
       "author": "Shakespeare",
       "region": "r_europe",
-      "description": "The Tragedy of King Lear, often shortened to King Lear, is a tragedy written by William Shakespeare in late 1605 or early 1606. Set in pre-Roman Britain, the play depicts the consequences of King Lear's love-test, in which he divides his power and land according to the praise of his daughters.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A tragedy about an aging king who descends into madness after dividing his estate between two of his three daughters based on their superficial flattery.",
+      "authorDescription": "The quintessential English playwright and poet, widely regarded as the greatest writer in the English language."
     },
     {
       "id": "w_les_mis",
       "type": "work",
-      "label": "Les Misérables",
+      "label": "Les Mis\u00e9rables",
       "author": "Victor Hugo",
       "region": "r_europe",
-      "description": "Les Misérables (, French: [le mizeʁabl] ) is a French epic historical novel by Victor Hugo, first published on 31 March 1862, that is considered one of the greatest novels of the 19th century. Les Misérables has been popularized through numerous adaptations for film, television, and the stage, including a musical.",
-      "authorDescription": "Victor-Marie Hugo, vicomte Hugo (French: [viktɔʁ maʁi yɡo] ; 26 February 1802 – 22 May 1885) was a French Romantic author, poet, essayist, playwright, journalist, human rights activist and politician. His most famous works are the novels The Hunchback of Notre-Dame (1831) and Les Misérables (1862)."
+      "description": "Les Mis\u00e9rables (, French: [le mize\u0281abl] ) is a French epic historical novel by Victor Hugo, first published on 31 March 1862, that is considered one of the greatest novels of the 19th century. Les Mis\u00e9rables has been popularized through numerous adaptations for film, television, and the stage, including a musical.",
+      "authorDescription": "Victor-Marie Hugo, vicomte Hugo (French: [vikt\u0254\u0281 ma\u0281i y\u0261o] ; 26 February 1802 \u2013 22 May 1885) was a French Romantic author, poet, essayist, playwright, journalist, human rights activist and politician. His most famous works are the novels The Hunchback of Notre-Dame (1831) and Les Mis\u00e9rables (1862)."
     },
     {
       "id": "w_frankenstein",
@@ -391,16 +391,16 @@
       "author": "Mary Shelley",
       "region": "r_europe",
       "description": "Frankenstein; or, The Modern Prometheus is an 1818 Gothic novel written by English author Mary Shelley. Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a sapient creature from different body parts in an unorthodox scientific experiment.",
-      "authorDescription": "Mary Wollstonecraft Shelley (née Godwin; 30 August 1797 – 1 February 1851) was an English novelist who wrote the Gothic novel Frankenstein; or, The Modern Prometheus (1818), which is considered an early example of science fiction. She also edited and promoted the works of her husband, the Romantic poet and philosopher Percy Bysshe Shelley."
+      "authorDescription": "Mary Wollstonecraft Shelley (n\u00e9e Godwin; 30 August 1797 \u2013 1 February 1851) was an English novelist who wrote the Gothic novel Frankenstein; or, The Modern Prometheus (1818), which is considered an early example of science fiction. She also edited and promoted the works of her husband, the Romantic poet and philosopher Percy Bysshe Shelley."
     },
     {
       "id": "w_jane_eyre",
       "type": "work",
       "label": "Jane Eyre",
-      "author": "Charlotte Brontë",
+      "author": "Charlotte Bront\u00eb",
       "region": "r_europe",
-      "description": "Jane Eyre ( AIR; originally published as Jane Eyre: An Autobiography) is a novel by the English writer Charlotte Brontë. It was published under her pen name \"Currer Bell\" on 19 October 1847 by Smith, Elder & Co.",
-      "authorDescription": "Charlotte Nicholls (21 April 1816 – 31 March 1855), commonly known by her maiden name Charlotte Brontë (, commonly ), was an English novelist and poet, and was the elder sister of Emily, Anne and Branwell Brontë. She is best known for her novel Jane Eyre, which was first published under the pseudonym Currer Bell."
+      "description": "Jane Eyre ( AIR; originally published as Jane Eyre: An Autobiography) is a novel by the English writer Charlotte Bront\u00eb. It was published under her pen name \"Currer Bell\" on 19 October 1847 by Smith, Elder & Co.",
+      "authorDescription": "Charlotte Nicholls (21 April 1816 \u2013 31 March 1855), commonly known by her maiden name Charlotte Bront\u00eb (, commonly ), was an English novelist and poet, and was the elder sister of Emily, Anne and Branwell Bront\u00eb. She is best known for her novel Jane Eyre, which was first published under the pseudonym Currer Bell."
     },
     {
       "id": "w_moby_dick",
@@ -408,8 +408,8 @@
       "label": "Moby Dick",
       "author": "Herman Melville",
       "region": "r_usa",
-      "description": "A notable literary work.",
-      "authorDescription": "Herman Melville (born Melvill; August 1, 1819 – September 28, 1891) was an American writer of the American Renaissance period. Among his best-known works are Moby-Dick (1851); Typee (1846), a romanticized account of his experiences in Polynesia; and Billy Budd, Sailor, a posthumously published novella."
+      "description": "An epic seafaring narrative recounting captain Ahab's obsessive quest for revenge against the giant white sperm whale that bit off his leg.",
+      "authorDescription": "An American novelist, short story writer, and poet of the American Renaissance period."
     },
     {
       "id": "w_anna_karenina",
@@ -417,8 +417,8 @@
       "label": "Anna Karenina",
       "author": "Tolstoy",
       "region": "r_russia",
-      "description": "Anna Karenina (Russian: Анна Каренина, IPA: [ˈanːə kɐˈrʲenʲɪnə]) is a novel, first published in book form in 1878, by the Russian author Leo Tolstoy. Often considered to be the greatest work of world literature, Tolstoy himself called it his first true novel.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A complex novel that interleaves the tragic affair of the titular character with the philosophical and agricultural pursuits of a wealthy landowner in Imperial Russia.",
+      "authorDescription": "A Russian writer regarded as one of the greatest authors of all time, known for his epic realist fiction."
     },
     {
       "id": "w_crime_punishment",
@@ -426,8 +426,8 @@
       "label": "Crime and Punishment",
       "author": "Dostoevsky",
       "region": "r_russia",
-      "description": "Crime and Punishment is a novel by the Russian author Fyodor Dostoevsky. It was first published in the literary journal The Russian Messenger in twelve monthly installments during 1866.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A psychological drama focusing on the moral anguish and mental dilemmas of Raskolnikov, an impoverished student who plots a murder for money.",
+      "authorDescription": "A Russian novelist and philosopher whose works explore human psychology in the troubled political, social, and spiritual atmospheres of 19th-century Russia."
     },
     {
       "id": "w_trial",
@@ -435,8 +435,8 @@
       "label": "The Trial",
       "author": "Kafka",
       "region": "r_europe",
-      "description": "The Trial (German: Der Prozess) is a novel written by Franz Kafka in 1914 and 1915 and published posthumously on 26 April 1925. One of his best-known works, it tells the story of Josef K., a man arrested and prosecuted by an inaccessible authority, with the nature of the crime of which he is accused revealed neither to him nor to the reader.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A surreal novel telling the story of Josef K., a man arrested and prosecuted by a remote, inaccessible authority, with the nature of his crime never revealed.",
+      "authorDescription": "A German-speaking Bohemian novelist and short-story writer, widely regarded as one of the major figures of 20th-century literature."
     },
     {
       "id": "w_godot",
@@ -444,8 +444,8 @@
       "label": "Waiting for Godot",
       "author": "Beckett",
       "region": "r_europe",
-      "description": "Waiting for Godot (  GOD-oh or   gə-DOH) is a play by Irish author Samuel Beckett. It was written (1948–1949), first published (1952), and first performed (1953) in French as En attendant Godot.",
-      "authorDescription": "Beckett is an English surname. Notable people with the surname include:  Adam Beckett (1950–79), American animator, special effects artist and teacher, worked on Star Wars Alex Beckett (footballer) (born 1954), Scottish footballer Alex Beckett (actor) Allan Beckett (1914–2005), British civil engineer Andy Beckett (born 1969), British journalist and historian Ann Beckett (1927–2002), Irish pioneer of occupational therapy Arnold Beckett (1920–2010), British pharmacist, academic, and expert on doping in sport Barry Beckett (1943–2009), American musician Beatrice Beckett (1905–1957), the first wife of the British statesman Anthony Eden Bernard Beckett (born 1967), New Zealand writer of fiction for young adults Billy Beckett (1915–1998), English footballer Bob Beckett (1936–2019), former Canadian ice hockey centre Charles Beckett (cricketer) (1794–1838), English first-class cricketer Charles Beckett (politician) (born 1958), American politician Charles Edward Beckett (1849–1925), brigadier-general and cavalry officer in the British Army Chris Beckett (born 1955), English writer, social worker and academic Christopher Beckett, 4th Baron Grimthorpe (1915–2003) Claire Beckett (born 1978), American photographer Clarice Beckett (1887–1935), Australian Tonalist painter Clifford Thomason Beckett (1891–1972) British Major General Damian Beckett or Cham (born 1979), Jamaica born rapper, singer-songwriter and actor Dave Beckett (born 1949), of Canadian pop duo Gary and Dave David Beckett (born 1954), English cricketer Derry Beckett (1919–1959), Irish Gaelic footballer and hurler Douglas Beckett (born 1959), former English cricketer Edmund Beckett, 1st Baron Grimthorpe (1816–1905) Sir Edmund Beckett, 4th Baronet (1787–1874) Edward Beckett, 5th Baron Grimthorpe (born 1954) Edwin Beckett (1937–2018), Head of the British Defence Staff in Washington, D.C. Emma Beckett (born 1984), Australian netball player in the ANZ Championship Emma Beckett (born 1987), Irish footballer Ernest Beckett, 2nd Baron Grimthorpe (1856–1917) Ernest Beckett (1869–1952), footballer Francis Beckett (born 1945), English author, journalist, biographer, and contemporary historian Fred Beckett (1917–1946), American jazz trombonist Galen Beckett or Mark Anthony (writer), American author who lives and writes in Colorado Gervase Beckett (1866–1937), born William Gervase Beckett-Denison, British banker and Conservative politician Gwladys Beckett or Gwladys, Lady Delamere (1897–1943), the first female Mayor of Nairobi from 1938 to 1940 Harry Beckett (1935–2010), British trumpeter and flugelhorn player of Barbadian origin Harry Beckett (actor) (1839–1880), comedian who was president of the Lambs from 1879 to 1880 Hollis Beckett (1896–1976), politician in Ontario, Canada Isaac Beckett (1653–1719), English mezzotint engraver, one of the first practitioners of the art in the country J. C. Beckett (1912–1996), Northern Irish historian James Beckett (disambiguation) Jason Beckett (born 1980), Canadian professional ice hockey defenceman Jerry Beckett (1886–1943), Irish Gaelic footballer Joe Beckett (1892–1965), English boxer Joe Rand Beckett (1891–1969), American veteran of World War I, lawyer, member of the Indiana Senate Joel Beckett (born Joel Bygraves), English actor John Beckett (disambiguation) Josh Beckett (born 1980), Major League Baseball pitcher Julia Beckett (born 1986), English competitive swimmer Justin Beckett, American entrepreneur, philanthropist and author Kelly Beckett, English professional host, actress, musician and model Kirsten Beckett (born 1996), South African artistic gymnast Larry Beckett (born 1947), American poet and songwriter best known for his collaborations with Tim Buckley in the late 1960s Laurel Beckett, American biostatistician Lenny Beckett (born 1980), Australian rugby union player Lez Beckett, Australian hip hop artist Liam Beckett (born 1951), football manager and former player from Northern Ireland Luke Beckett (born 1976), English former professional footballer Margaret Beckett (born 1943), British Labour Party politician and Member of Parliament Marion H. Beckett (1886–1949), American painter Mary Beckett (1926–2013), Irish author Matt Beckett (born 1973), Welsh former professional cyclist Mavis Beckett, former Australian field hockey player Michael Beckett (born 1995), British Olympic sailor Miles Beckett, co-founder of EQAL, media and technology company in 2008 Nicholas Beckett (born 1987), Jamaican international footballer Peter Beckett (born 1948), English musician and songwriter Ralph Beckett, 3rd Baron Grimthorpe (1891–1963) Ray Beckett (journalist) (1903–1983), Australian journalist, newspaper editor and author Ray Beckett (sound engineer), British sound engineer Richard B. Beckett (1919–1983), Canadian politician Richard Beckett (author) (1936–1987), Australian author and journalist Richard Beckett (cricketer) (1772–1809), English amateur cricketer and captain Rick Beckett (1954–2009), American radio broadcaster Rob Beckett (born 1986), English stand-up comedian and presenter Robbie Beckett (born 1972), former Major League Baseball pitcher Robbie Beckett (rugby league) (born 1974), former professional rugby league footballer Robert Beckett (1862–1917), English-born Australian politician Rogers Beckett (born 1977), American former football safety Ronald G. Beckett (born 1953), American paleoanthropologist Rowland Beckett, Australian rugby league player Roy Beckett (1928–2008), English footballer Sam Beckett (skateboarder) (born 1992), British professional skateboarder Samuel Beckett (1906–1989), Irish Nobel Prize-winning writer and theatre director Sarah Beckett (born 1999), English rugby union player Scotty Beckett (1929–1968), American child actor who was a regular in the Our Gang series Sheilah Beckett (1913–2013), American illustrator known for her work on the Little Golden Books series Simon Beckett (born 1960), British journalist and author Stephen Beckett, English actor Tanya Beckett (born 1966), English television and radio journalist Tavante Beckett (born 1997), American football player Ted Beckett (1907–1978), American football player Terence Beckett (1923–2013), British businessman Thomas W. Naylor Beckett (1839–1906), English-born coffee and tea planter in Ceylon Tom Beckett CBE (born 1962), British Army officer Tony Beckett (born 1960), former Australian rules footballer Vinton Beckett (1923–2018), Jamaican former track and field athlete W. N. T. Beckett, MVO, DSC, RN (1893–1941), Royal Navy officer in both World Wars Wade Beckett, TV, film and digital producer Walter Beckett (composer) (1914–1996), Irish composer Wendy Beckett (known as Sister Wendy) (1930–2018), South African nun known for presenting art history documentaries William Beckett (disambiguation)   == Fictional characters == Beckett, a vampire in the computer role-playing game Vampire: The Masquerade – Bloodlines (2004) Amanda Beckett, the main love interest in the film Can't Hardly Wait (1998) Andrew Beckett, the protagonist in the film Philadelphia Brandon Beckett, the main character in the film Sniper: Reloaded (2011) Carson Beckett, fictional Scottish character in the Canadian-American science fiction television series Stargate Atlantis Cutler Beckett, an antagonist in the film series Pirates of the Caribbean Kate Beckett, a police officer on the television series Castle Captain Maggie Beckett, on the television series Sliders Nick Beckett, on the television series Bugs Patrick James \"PJ\" Beckett, from the video game Ace Combat Zero: The Belkan War Dr."
+      "description": "Waiting for Godot (  GOD-oh or   g\u0259-DOH) is a play by Irish author Samuel Beckett. It was written (1948\u20131949), first published (1952), and first performed (1953) in French as En attendant Godot.",
+      "authorDescription": "Beckett is an English surname. Notable people with the surname include:  Adam Beckett (1950\u201379), American animator, special effects artist and teacher, worked on Star Wars Alex Beckett (footballer) (born 1954), Scottish footballer Alex Beckett (actor) Allan Beckett (1914\u20132005), British civil engineer Andy Beckett (born 1969), British journalist and historian Ann Beckett (1927\u20132002), Irish pioneer of occupational therapy Arnold Beckett (1920\u20132010), British pharmacist, academic, and expert on doping in sport Barry Beckett (1943\u20132009), American musician Beatrice Beckett (1905\u20131957), the first wife of the British statesman Anthony Eden Bernard Beckett (born 1967), New Zealand writer of fiction for young adults Billy Beckett (1915\u20131998), English footballer Bob Beckett (1936\u20132019), former Canadian ice hockey centre Charles Beckett (cricketer) (1794\u20131838), English first-class cricketer Charles Beckett (politician) (born 1958), American politician Charles Edward Beckett (1849\u20131925), brigadier-general and cavalry officer in the British Army Chris Beckett (born 1955), English writer, social worker and academic Christopher Beckett, 4th Baron Grimthorpe (1915\u20132003) Claire Beckett (born 1978), American photographer Clarice Beckett (1887\u20131935), Australian Tonalist painter Clifford Thomason Beckett (1891\u20131972) British Major General Damian Beckett or Cham (born 1979), Jamaica born rapper, singer-songwriter and actor Dave Beckett (born 1949), of Canadian pop duo Gary and Dave David Beckett (born 1954), English cricketer Derry Beckett (1919\u20131959), Irish Gaelic footballer and hurler Douglas Beckett (born 1959), former English cricketer Edmund Beckett, 1st Baron Grimthorpe (1816\u20131905) Sir Edmund Beckett, 4th Baronet (1787\u20131874) Edward Beckett, 5th Baron Grimthorpe (born 1954) Edwin Beckett (1937\u20132018), Head of the British Defence Staff in Washington, D.C. Emma Beckett (born 1984), Australian netball player in the ANZ Championship Emma Beckett (born 1987), Irish footballer Ernest Beckett, 2nd Baron Grimthorpe (1856\u20131917) Ernest Beckett (1869\u20131952), footballer Francis Beckett (born 1945), English author, journalist, biographer, and contemporary historian Fred Beckett (1917\u20131946), American jazz trombonist Galen Beckett or Mark Anthony (writer), American author who lives and writes in Colorado Gervase Beckett (1866\u20131937), born William Gervase Beckett-Denison, British banker and Conservative politician Gwladys Beckett or Gwladys, Lady Delamere (1897\u20131943), the first female Mayor of Nairobi from 1938 to 1940 Harry Beckett (1935\u20132010), British trumpeter and flugelhorn player of Barbadian origin Harry Beckett (actor) (1839\u20131880), comedian who was president of the Lambs from 1879 to 1880 Hollis Beckett (1896\u20131976), politician in Ontario, Canada Isaac Beckett (1653\u20131719), English mezzotint engraver, one of the first practitioners of the art in the country J. C. Beckett (1912\u20131996), Northern Irish historian James Beckett (disambiguation) Jason Beckett (born 1980), Canadian professional ice hockey defenceman Jerry Beckett (1886\u20131943), Irish Gaelic footballer Joe Beckett (1892\u20131965), English boxer Joe Rand Beckett (1891\u20131969), American veteran of World War I, lawyer, member of the Indiana Senate Joel Beckett (born Joel Bygraves), English actor John Beckett (disambiguation) Josh Beckett (born 1980), Major League Baseball pitcher Julia Beckett (born 1986), English competitive swimmer Justin Beckett, American entrepreneur, philanthropist and author Kelly Beckett, English professional host, actress, musician and model Kirsten Beckett (born 1996), South African artistic gymnast Larry Beckett (born 1947), American poet and songwriter best known for his collaborations with Tim Buckley in the late 1960s Laurel Beckett, American biostatistician Lenny Beckett (born 1980), Australian rugby union player Lez Beckett, Australian hip hop artist Liam Beckett (born 1951), football manager and former player from Northern Ireland Luke Beckett (born 1976), English former professional footballer Margaret Beckett (born 1943), British Labour Party politician and Member of Parliament Marion H. Beckett (1886\u20131949), American painter Mary Beckett (1926\u20132013), Irish author Matt Beckett (born 1973), Welsh former professional cyclist Mavis Beckett, former Australian field hockey player Michael Beckett (born 1995), British Olympic sailor Miles Beckett, co-founder of EQAL, media and technology company in 2008 Nicholas Beckett (born 1987), Jamaican international footballer Peter Beckett (born 1948), English musician and songwriter Ralph Beckett, 3rd Baron Grimthorpe (1891\u20131963) Ray Beckett (journalist) (1903\u20131983), Australian journalist, newspaper editor and author Ray Beckett (sound engineer), British sound engineer Richard B. Beckett (1919\u20131983), Canadian politician Richard Beckett (author) (1936\u20131987), Australian author and journalist Richard Beckett (cricketer) (1772\u20131809), English amateur cricketer and captain Rick Beckett (1954\u20132009), American radio broadcaster Rob Beckett (born 1986), English stand-up comedian and presenter Robbie Beckett (born 1972), former Major League Baseball pitcher Robbie Beckett (rugby league) (born 1974), former professional rugby league footballer Robert Beckett (1862\u20131917), English-born Australian politician Rogers Beckett (born 1977), American former football safety Ronald G. Beckett (born 1953), American paleoanthropologist Rowland Beckett, Australian rugby league player Roy Beckett (1928\u20132008), English footballer Sam Beckett (skateboarder) (born 1992), British professional skateboarder Samuel Beckett (1906\u20131989), Irish Nobel Prize-winning writer and theatre director Sarah Beckett (born 1999), English rugby union player Scotty Beckett (1929\u20131968), American child actor who was a regular in the Our Gang series Sheilah Beckett (1913\u20132013), American illustrator known for her work on the Little Golden Books series Simon Beckett (born 1960), British journalist and author Stephen Beckett, English actor Tanya Beckett (born 1966), English television and radio journalist Tavante Beckett (born 1997), American football player Ted Beckett (1907\u20131978), American football player Terence Beckett (1923\u20132013), British businessman Thomas W. Naylor Beckett (1839\u20131906), English-born coffee and tea planter in Ceylon Tom Beckett CBE (born 1962), British Army officer Tony Beckett (born 1960), former Australian rules footballer Vinton Beckett (1923\u20132018), Jamaican former track and field athlete W. N. T. Beckett, MVO, DSC, RN (1893\u20131941), Royal Navy officer in both World Wars Wade Beckett, TV, film and digital producer Walter Beckett (composer) (1914\u20131996), Irish composer Wendy Beckett (known as Sister Wendy) (1930\u20132018), South African nun known for presenting art history documentaries William Beckett (disambiguation)   == Fictional characters == Beckett, a vampire in the computer role-playing game Vampire: The Masquerade \u2013 Bloodlines (2004) Amanda Beckett, the main love interest in the film Can't Hardly Wait (1998) Andrew Beckett, the protagonist in the film Philadelphia Brandon Beckett, the main character in the film Sniper: Reloaded (2011) Carson Beckett, fictional Scottish character in the Canadian-American science fiction television series Stargate Atlantis Cutler Beckett, an antagonist in the film series Pirates of the Caribbean Kate Beckett, a police officer on the television series Castle Captain Maggie Beckett, on the television series Sliders Nick Beckett, on the television series Bugs Patrick James \"PJ\" Beckett, from the video game Ace Combat Zero: The Belkan War Dr."
     },
     {
       "id": "w_stranger",
@@ -453,8 +453,8 @@
       "label": "The Stranger",
       "author": "Camus",
       "region": "r_europe",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An existentialist novel about an emotionally detached Frenchman, Meursault, who commits a senseless murder in French Algeria.",
+      "authorDescription": "A French philosopher, author, and journalist who won the Nobel Prize in Literature and is closely associated with absurdist philosophy."
     },
     {
       "id": "w_1984",
@@ -462,8 +462,8 @@
       "label": "1984",
       "author": "Orwell",
       "region": "r_europe",
-      "description": "1984 (MCMLXXXIV) was a leap year starting on Sunday of the Gregorian calendar, the 1984th year of the Common Era (CE) and Anno Domini (AD) designations, the 984th  year of the 2nd millennium, the 84th  year of the 20th century, and the  5th   year of the 1980s decade.     == Events ==   === January === January 1 – The Bornean Sultanate of Brunei gains full independence from the United Kingdom, having become a British protectorate in 1888.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A dystopian social science fiction novel that examines the dangers of totalitarianism, mass surveillance, and repressive regimentation.",
+      "authorDescription": "An English novelist, essayist, and critic known for his lucid prose and biting social criticism."
     },
     {
       "id": "w_ulysses",
@@ -472,16 +472,16 @@
       "author": "Joyce",
       "region": "r_europe",
       "description": "Ulysses commonly refers to:",
-      "authorDescription": "Joyce may refer to:   == People == Joyce (name), list of people and fictional characters with the given name or surname Joyce (singer), (born 1948), Brazilian singer-songwriter James Joyce (1882–1941), Irish modernist writer Joyce Brothers (1927–2013), American psychologist, columnist, and television personality."
+      "authorDescription": "Joyce may refer to:   == People == Joyce (name), list of people and fictional characters with the given name or surname Joyce (singer), (born 1948), Brazilian singer-songwriter James Joyce (1882\u20131941), Irish modernist writer Joyce Brothers (1927\u20132013), American psychologist, columnist, and television personality."
     },
     {
       "id": "w_pynchon",
       "type": "work",
-      "label": "Gravity’s Rainbow",
+      "label": "Gravity\u2019s Rainbow",
       "author": "Pynchon",
       "region": "r_usa",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A complex, postmodern novel exploring themes of paranoia, determinism, and technology, set mainly in Europe at the end of World War II.",
+      "authorDescription": "An American novelist known for his dense and complex novels encompassing varied themes and writing styles."
     },
     {
       "id": "w_things_fall_apart",
@@ -489,17 +489,17 @@
       "label": "Things Fall Apart",
       "author": "Achebe",
       "region": "r_africa",
-      "description": "Things Fall Apart is the 1958 debut novel by Nigerian author Chinua Achebe. Set in Colonial Nigeria, it portrays the story of Okonkwo, a traditional and influential leader of the fictional Igbo clan of Umuofia, who opposes colonialism and early Christianity.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A defining novel of African literature that depicts pre-colonial life in the southeastern part of Nigeria and the arrival of Europeans.",
+      "authorDescription": "A Nigerian novelist, poet, and critic considered a central figure of modern African literature."
     },
     {
       "id": "w_midnight_children",
       "type": "work",
-      "label": "Midnight’s Children",
+      "label": "Midnight\u2019s Children",
       "author": "Rushdie",
       "region": "r_india",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A magical realist novel dealing with India's transition from British colonialism to independence, following children born at the exact moment of partition.",
+      "authorDescription": "A British-Indian novelist and essayist whose work combines magical realism with historical fiction."
     },
     {
       "id": "w_beloved",
@@ -508,7 +508,7 @@
       "author": "Toni Morrison",
       "region": "r_usa",
       "description": "Beloved may refer to:",
-      "authorDescription": "Chloe Anthony Wofford \"Toni\" Morrison (born Chloe Ardelia Wofford; February 18, 1931 – August 5, 2019) was an American novelist and editor. She was awarded the Nobel Prize in Literature in 1993."
+      "authorDescription": "Chloe Anthony Wofford \"Toni\" Morrison (born Chloe Ardelia Wofford; February 18, 1931 \u2013 August 5, 2019) was an American novelist and editor. She was awarded the Nobel Prize in Literature in 1993."
     },
     {
       "id": "w_blood_meridian",
@@ -525,8 +525,8 @@
       "label": "White Noise",
       "author": "DeLillo",
       "region": "r_usa",
-      "description": "White noise is primarily a signal or sound with a flat frequency spectrum.  White Noise may also refer to:   == Literature == White Noise (novel), a 1985 novel by Don DeLillo White Noise (play), a 2019 play by Suzan-Lori Parks   == Film and television == White Noise, a 2004 film starring Rahul Bose White Noise (2005 film), a horror thriller film starring Michael Keaton White Noise: The Light, the 2007 sequel White Noise (2020 film), a documentary film White Noise (2022 film), a black comedy film directed by Noah Baumbach based on the 1985 DeLillo book White Noise (The Morning Show), an episode of the American television series The Morning Show White Noise, a fictional character from The Venture Bros.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A quintessential postmodern novel exploring consumerism, academic absurdities, and the fear of death, catalyzed by an \"airborne toxic event\".",
+      "authorDescription": "An American novelist, playwright, and essayist whose works frequently explore themes of late capitalism and consumerism."
     },
     {
       "id": "w_name_of_rose",
@@ -535,458 +535,458 @@
       "author": "Eco",
       "region": "r_europe",
       "genre": "g_postmodernism",
-      "description": "The Name of the Rose (Italian: Il nome della rosa [il ˈnoːme della ˈrɔːza]) is the 1980 debut novel by Italian author Umberto Eco. It is a historical murder mystery set in an Italian monastery in 1327, and an intellectual mystery combining semiotics in fiction, biblical analysis, medieval studies, and literary theory.",
+      "description": "The Name of the Rose (Italian: Il nome della rosa [il \u02c8no\u02d0me della \u02c8r\u0254\u02d0za]) is the 1980 debut novel by Italian author Umberto Eco. It is a historical murder mystery set in an Italian monastery in 1327, and an intellectual mystery combining semiotics in fiction, biblical analysis, medieval studies, and literary theory.",
       "authorDescription": "Eco may refer to ecology or economics."
     },
     {
       "id": "w_100_years",
       "type": "work",
       "label": "One Hundred Years of Solitude",
-      "author": "Gabriel García Márquez",
+      "author": "Gabriel Garc\u00eda M\u00e1rquez",
       "region": "r_latam",
       "genre": "g_magical_realism",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A landmark novel outlining the multi-generational story of the Buend\u00eda family in the fictional town of Macondo, establishing the magic realism genre.",
+      "authorDescription": "A Colombian novelist, short-story writer, screenwriter, and journalist, widely considered one of the most significant authors of the 20th century."
     },
     {
       "id": "w_gulliverstravel",
       "type": "work",
       "label": "Gulliver's Travels",
       "author": "Jonathan Swift",
-      "description": "A notable literary work.",
-      "authorDescription": "Jonathan Swift (30 November 1667 – 19 October 1745) was an Anglo-Irish writer, essayist, satirist, and Anglican cleric. He was the author of the satirical prose novel Gulliver's Travels (1726) and the creator of the fictional island of Lilliput."
+      "description": "A satirical masterpiece combining adventure and social commentary, critiquing both human nature and the popular \"travelers' tales\" of its time.",
+      "authorDescription": "An Anglo-Irish satirist, essayist, political pamphleteer, and cleric, remembered for works like A Modest Proposal."
     },
     {
       "id": "w_candide",
       "type": "work",
       "label": "Candide",
       "author": "Voltaire",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A witty and fast-paced French satire that relentlessly attacks philosophical optimism through the absurd misfortunes of its protagonist.",
+      "authorDescription": "A French Enlightenment writer, historian, and philosopher famous for his wit and criticism of Christianity."
     },
     {
       "id": "w_faust",
       "type": "work",
       "label": "Faust",
       "author": "Johann Wolfgang von Goethe",
-      "description": "Faust ( FOWST; German: [faʊst] ) is the protagonist of a classic German legend based on the historical Johann Georg Faust (c. 1480–1540). The erudite Faust is highly successful yet dissatisfied with his life, which leads him to make a deal with the Devil at a crossroads, exchanging his soul for unlimited knowledge and worldly pleasures.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A towering two-part tragic play about a scholar who makes a pact with the devil, exploring the endless human striving for knowledge and experience.",
+      "authorDescription": "A German polymath generally considered the greatest and most influential writer in the German language."
     },
     {
       "id": "w_wutheringheight",
       "type": "work",
       "label": "Wuthering Heights",
-      "author": "Emily Brontë",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "author": "Emily Bront\u00eb",
+      "description": "A dark, passionate classic of English literature exploring the intense and almost demonic love between Catherine Earnshaw and Heathcliff.",
+      "authorDescription": "An English novelist and poet, best remembered for her solitary, intense, and masterpiece novel."
     },
     {
       "id": "w_thefallofthehou",
       "type": "work",
       "label": "The Fall of the House of Usher",
       "author": "Edgar Allan Poe",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A quintessential Gothic short story exploring themes of madness, family, isolation, and metaphysical identity within a crumbling manor.",
+      "authorDescription": "An American writer and critic, best known for his poetry and short stories, particularly his tales of mystery and the macabre."
     },
     {
       "id": "w_nausea",
       "type": "work",
       "label": "Nausea",
       "author": "Sartre",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A philosophical novel defining existentialist thought, following a historian who becomes convinced that inanimate objects and situations encroach on his ability to define himself.",
+      "authorDescription": "A French philosopher, playwright, novelist, and political activist, one of the key figures in the philosophy of existentialism."
     },
     {
       "id": "w_seasonofmigrati",
       "type": "work",
       "label": "Season of Migration to the North",
       "author": "Tayeb Salih",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A postcolonial Sudanese novel exploring the complex psychological and cultural entanglements between the East and the West.",
+      "authorDescription": "A Sudanese writer described as the \"genius of the modern Arabic novel\" and one of the genre's foremost voices."
     },
     {
       "id": "w_bravenewworld",
       "type": "work",
       "label": "Brave New World",
       "author": "Huxley",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A dystopian vision of a future society defined by intelligence-based social hierarchy, sleep-learning, psychological manipulation, and conditioning.",
+      "authorDescription": "An English writer and philosopher who wrote nearly fifty books and is noted for his novels and wide-ranging essays."
     },
     {
       "id": "w_robinsoncrusoe",
       "type": "work",
       "label": "Robinson Crusoe",
       "author": "Defoe",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "Often considered the first English novel, casting a castaway who spends 28 years on a remote tropical desert island.",
+      "authorDescription": "An English writer, journalist, and spy, widely seen as one of the founders of the English novel."
     },
     {
       "id": "w_tomjones",
       "type": "work",
       "label": "Tom Jones",
       "author": "Fielding",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A comic novel detailing the picaresque and complicated adventures of its foundling protagonist, celebrated for its humor and narrative structure.",
+      "authorDescription": "An English novelist and magistrate known for his rich, earthy humor and satirical prowess."
     },
     {
       "id": "w_tristramshandy",
       "type": "work",
       "label": "Tristram Shandy",
       "author": "Sterne",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A fundamentally experimental and humorous novel characterized by infinite digressions, bizarre formatting, and a non-linear narrative style.",
+      "authorDescription": "An Anglo-Irish novelist and an Anglican cleric, best known for his innovative approach to narrative form."
     },
     {
       "id": "w_middlemarch",
       "type": "work",
       "label": "Middlemarch",
       "author": "George Eliot",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A sweeping study of provincial English life, renowned for its psychological insight, realism, and exploration of women's status.",
+      "authorDescription": "An English novelist, poet, and journalist, and one of the leading writers of the Victorian era who used a male pen name."
     },
     {
       "id": "w_pregoriot",
       "type": "work",
-      "label": "Père Goriot",
-      "author": "Honoré de Balzac",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "label": "P\u00e8re Goriot",
+      "author": "Honor\u00e9 de Balzac",
+      "description": "A foundational novel in the realism movement focusing on three interconnected characters during the Bourbon Restoration in Paris.",
+      "authorDescription": "A French novelist and playwright known for his multi-volume collection 'La Com\u00e9die humaine'."
     },
     {
       "id": "w_davidcopperfiel",
       "type": "work",
       "label": "David Copperfield",
       "author": "Charles Dickens",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A coming-of-age novel tracking the life of its protagonist from childhood to maturity, holding deep autobiographical significance for the author.",
+      "authorDescription": "An English writer and social critic who created some of the world's best-known fictional characters."
     },
     {
       "id": "w_insearchoflostt",
       "type": "work",
       "label": "In Search of Lost Time",
       "author": "Marcel Proust",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A monumental seven-volume novel exploring themes of involuntary memory, truth, and the loss of time and meaning.",
+      "authorDescription": "A French novelist, critic, and essayist considered to be one of the most influential authors of the 20th century."
     },
     {
       "id": "w_thesoundofthefu",
       "type": "work",
       "label": "The Sound of the Fury",
       "author": "Faulkner",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A cornerstone of Southern Gothic literature employing intense stream of consciousness to depict the tragic decline of the Compson family.",
+      "authorDescription": "An American writer and Nobel Prize laureate from Oxford, Mississippi, known for his experimental style."
     },
     {
       "id": "w_domjuan",
       "type": "work",
       "label": "Dom Juan",
-      "author": "Molière",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "author": "Moli\u00e8re",
+      "description": "A French comedy presenting the legendary figure of Don Juan as a cynical, atheistic aristocrat challenging societal norms.",
+      "authorDescription": "A French playwright, actor, and poet, widely regarded as one of the greatest writers in the French language and universal literature."
     },
     {
       "id": "w_madamebovary",
       "type": "work",
       "label": "Madame Bovary",
       "author": "Gustave Flaubert",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A foundational piece of literary realism depicting a provincial doctor's wife who engages in adulterous affairs to escape banality.",
+      "authorDescription": "A highly influential French novelist credited with pioneering the literary realism movement in France."
     },
     {
       "id": "w_theredandthebla",
       "type": "work",
       "label": "The Red and the Black",
       "author": "Stendhal",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A psychological novel chronicling a young provincial man's attempts to rise socially beyond his modest upbringing through hard work, hypocrisy, and deception.",
+      "authorDescription": "A 19th-century French writer known for his acute analysis of his characters' psychology."
     },
     {
       "id": "w_dracula",
       "type": "work",
       "label": "Dracula",
       "author": "Bram Stoker",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "The quintessential vampire novel introducing Count Dracula and establishing many conventions of subsequent vampire fantasy.",
+      "authorDescription": "An Irish author best known for introducing one of the most famous literary monsters."
     },
     {
       "id": "w_arthurianlegend",
       "type": "work",
       "label": "Arthurian legends",
       "author": "various",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A rich tapestry of medieval folklore concerning King Arthur, his knights of the Round Table, and the quest for the Holy Grail.",
+      "authorDescription": "A collection of folk tales and romances woven together by numerous medieval authors across Europe."
     },
     {
       "id": "w_thehunchbackofn",
       "type": "work",
       "label": "The Hunchback of Notre-Dame",
       "author": "Victor Hugo",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An expansive French Romantic novel focusing on the tragic fate of Quasimodo and Esmeralda while exploring Paris's Gothic architecture.",
+      "authorDescription": "A French poet, novelist, and dramatist of the Romantic movement, towering over French literature."
     },
     {
       "id": "w_thescarletlette",
       "type": "work",
       "label": "The Scarlet Letter",
       "author": "Hawthorne",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A deeply symbolic tale of sin, punishment, and dignity set in 17th-century Puritan Massachusetts.",
+      "authorDescription": "An American novelist and short story writer whose works focus on history, morality, and religion."
     },
     {
       "id": "w_mrsdalloway",
       "type": "work",
       "label": "Mrs Dalloway",
       "author": "Virginia Woolf",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An influential modern fiction work detailing a single day in the life of Clarissa Dalloway, utilizing stream of consciousness.",
+      "authorDescription": "An English writer considered one of the most important modernist 20th-century authors."
     },
     {
       "id": "w_themagicmountai",
       "type": "work",
       "label": "The Magic Mountain",
       "author": "Thomas Mann",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A monumental novel set in a Swiss sanatorium, exploring the cultural and political tensions of Europe just before World War I.",
+      "authorDescription": "A German novelist, short story writer, social critic, and Nobel Prize laureate."
     },
     {
       "id": "w_othello",
       "type": "work",
       "label": "Othello",
       "author": "William Shakespeare",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A tragic play revolving around racism, jealousy, love, and betrayal, focusing on a Moorish general manipulated by his ensign.",
+      "authorDescription": "The quintessential English playwright and poet, widely regarded as the greatest writer in the English language."
     },
     {
       "id": "w_thetempest",
       "type": "work",
       "label": "The Tempest",
       "author": "William Shakespeare",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "Often considered Shakespeare's final solo play, exploring themes of magic, betrayal, revenge, and family on an isolated island.",
+      "authorDescription": "The quintessential English playwright and poet, widely regarded as the greatest writer in the English language."
     },
     {
       "id": "w_warandpeace",
       "type": "work",
       "label": "War and Peace",
       "author": "Lev Tolstoy",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A sprawling epic of Russian literature that intertwines the lives of five aristocratic families against the backdrop of the Napoleonic Wars.",
+      "authorDescription": "A Russian writer regarded as one of the greatest authors of all time, known for his epic realist fiction."
     },
     {
       "id": "w_thebrotherskara",
       "type": "work",
       "label": "The Brothers Karamazov",
       "author": "Dostoevsky",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A passionate philosophical novel entering deeply into ethical debates of God, free will, and morality through the story of a patricide.",
+      "authorDescription": "A Russian novelist and philosopher whose works explore human psychology in the troubled political, social, and spiritual atmospheres of 19th-century Russia."
     },
     {
       "id": "w_ficciones",
       "type": "work",
       "label": "Ficciones",
       "author": "Borges",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A brilliant collection of short stories weaving complex philosophical themes involving labyrinths, infinity, and the nature of reality.",
+      "authorDescription": "An Argentine short-story writer, essayist, poet and translator, and a key figure in Spanish-language literature."
     },
     {
       "id": "w_thehouseofthesp",
       "type": "work",
       "label": "The House of the Spirits",
       "author": "Isabel Allende",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A defining magic realist novel weaving the story of the Trueba family through decades of social and political upheaval in Chile.",
+      "authorDescription": "A Chilean writer whose works blend elements of magical realism and personal experience."
     },
     {
       "id": "w_adollshouse",
       "type": "work",
       "label": "A Doll's House",
       "author": "Ibsen",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A groundbreaking three-act play that fundamentally challenged patriarchal norms regarding the roles of men and women in marriage.",
+      "authorDescription": "A Norwegian playwright and theatre director widely considered the \"father of realism\"."
     },
     {
       "id": "w_missjulie",
       "type": "work",
       "label": "Miss Julie",
       "author": "Strindberg",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A masterwork naturalistic play exploring class conflict, gender, and power dynamics over a single Midsummer's Eve.",
+      "authorDescription": "A Swedish playwright, novelist, and poet whose works heralded the emergence of modern drama."
     },
     {
       "id": "w_theroad",
       "type": "work",
       "label": "The Road",
       "author": "Cormac McCarthy",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A bleak, haunting post-apocalyptic novel following a father and son as they walk through a burned, ashen landscape.",
+      "authorDescription": "An American writer noted for his sparse prose and dark, unflinching themes."
     },
     {
       "id": "w_norwegianwood",
       "type": "work",
       "label": "Norwegian Wood",
       "author": "Murakami",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A nostalgic story of loss, sexuality, and the tumultuous life of students in 1960s Tokyo, bringing its author global fame.",
+      "authorDescription": "A Japanese writer whose work has been translated into 50 languages and is known for its surrealist tones."
     },
     {
       "id": "w_tangpoetry",
       "type": "work",
       "label": "Tang Poetry",
       "author": "Li Bai, Du Fu",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An extraordinary era of literary flourishing in China, capturing profound reflections on nature, exile, and human transience.",
+      "authorDescription": "A collective representation of the towering poetic masters of the Tang Dynasty."
     },
     {
       "id": "w_bookofsongs",
       "type": "work",
       "label": "Book of Songs",
       "author": "Shijing",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "The oldest existing collection of Chinese poetry, establishing traditions that shaped Chinese literature for millennia.",
+      "authorDescription": "Compiled selections of traditional hymns, folk songs, and courtly music from early Chinese antiquity."
     },
     {
       "id": "w_journeytothewes",
       "type": "work",
       "label": "Journey to the West",
       "author": "Wu Cheng'en",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "One of the Four Great Classical Novels of Chinese literature, recounting the legendary pilgrimage of a Buddhist monk to India.",
+      "authorDescription": "A Chinese novelist and poet of the Ming Dynasty, traditionally attributed as the author of this seminal epic."
     },
     {
       "id": "w_watermargin",
       "type": "work",
       "label": "Water Margin",
       "author": "Shi Nai'an",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A sprawling epic about a band of 108 outlaws who form a sizable army before being granted amnesty to resist foreign invaders.",
+      "authorDescription": "A Chinese writer from the early Ming period widely attributed with authoring one of China's great classical novels."
     },
     {
       "id": "w_stoner",
       "type": "work",
       "label": "Stoner",
       "author": "John Williams",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A remarkably poignant campus novel chronicling the quiet, ostensibly unremarkable but deeply profound life of an academic.",
+      "authorDescription": "An American author, poet, and academic mostly known for this brilliant but formerly neglected masterpiece."
     },
     {
       "id": "w_dreamoftheredch",
       "type": "work",
       "label": "Dream of the Red Chamber",
       "author": "Cao Xueqin",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A pinnacle of Chinese literature providing incredibly detailed observation of Ming-Qing era aristocratic life and social structures.",
+      "authorDescription": "A Chinese writer of the Qing Dynasty who authored what is considered China's greatest masterpiece."
     },
     {
       "id": "w_tolive",
       "type": "work",
       "label": "To Live",
       "author": "Yu Hua",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A harrowing, deeply moving novel illustrating the profound struggles of one Chinese peasant surviving the nation's tumultuous 20th century.",
+      "authorDescription": "A contemporary Chinese author whose works often unflinchingly portray China's modern historical tragedies."
     },
     {
       "id": "w_thesoundofwaves",
       "type": "work",
       "label": "The Sound of Waves",
       "author": "Mishima",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A beautiful coming-of-age story centering on the pure, innocent love between a young fisherman and a pearl diver in a Japanese village.",
+      "authorDescription": "One of Japan's most significant post-war writers, known for blending modern and traditional Japanese values."
     },
     {
       "id": "w_snowcountry",
       "type": "work",
       "label": "Snow Country",
       "author": "Kawabata",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An atmospheric novel contrasting the hollow, transient life of a Tokyo dilettante against the raw, isolated beauty of a rural hot-spring town.",
+      "authorDescription": "The first Japanese author to receive the Nobel Prize in Literature, famous for his lyrical subtlety."
     },
     {
       "id": "w_thetaleofgenji",
       "type": "work",
       "label": "The Tale of Genji",
       "author": "Murasaki Shikibu",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "Often considered the world's first novel, an elegant depiction of the lifestyles of high courtiers during the Heian period in Japan.",
+      "authorDescription": "A Japanese novelist, poet, and lady-in-waiting at the Imperial court in the 11th century."
     },
     {
       "id": "w_kokoro",
       "type": "work",
       "label": "Kokoro",
       "author": "Natsume Soseki",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A masterful exploration of the transition from the Japanese Meiji society to the modern era, examining isolation and guilt.",
+      "authorDescription": "Considered the greatest writer of modern Japanese history, extensively exploring the clash of Japanese tradition with Westernization."
     },
     {
       "id": "w_thepillowbook",
       "type": "work",
       "label": "The Pillow Book",
-      "author": "Sei Shōnagon",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "author": "Sei Sh\u014dnagon",
+      "description": "An intimate, witty collection of observations, essays, and musings recorded during the author's time as an imperial court lady.",
+      "authorDescription": "A Japanese author, poet, and a court lady to Empress Consort Teishi during the middle Heian period."
     },
     {
       "id": "w_thegodofsmallth",
       "type": "work",
       "label": "The God of Small Things",
       "author": "Arundhati Roy",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A Booker Prize-winning novel focusing on how seemingly small things in life deeply influence human behavior and fates in Kerala, India.",
+      "authorDescription": "An Indian author and political activist best known for her debut novel, which won the Man Booker Prize."
     },
     {
       "id": "w_shakuntala",
       "type": "work",
       "label": "Shakuntala",
-      "author": "Kālidāsa",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "author": "K\u0101lid\u0101sa",
+      "description": "A paramount ancient Indian play beautifully synthesizing love, exile, recognition, and divine intervention in classical Sanskrit.",
+      "authorDescription": "Classical India's greatest poet and playwright, whose brilliant Sanskrit literature endures through the centuries."
     },
     {
       "id": "w_gitanjali",
       "type": "work",
       "label": "Gitanjali",
       "author": "Rabindranath Tagore",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A profoundly spiritual collection of poems offering devotion, nature, and divine unity, which earned its author global recognition.",
+      "authorDescription": "A Bengali polymath who reshaped Bengali literature and music, and became the first non-European to win the Nobel Prize in Literature."
     },
     {
       "id": "w_onethousandando",
       "type": "work",
       "label": "One Thousand and One Nights",
       "author": "various",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A foundational collection of Middle Eastern folk tales compiled over centuries, interwoven through a framing device by Scheherazade.",
+      "authorDescription": "An expansive compilation shaped by numerous ancient authors, translators, and scholars across West and South Asia."
     },
     {
       "id": "w_themuqaddimah",
       "type": "work",
       "label": "The Muqaddimah",
       "author": "Ibn Khaldun",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A profound early volume of universal history that essentially laid foundations for modern fields of sociology and historicism.",
+      "authorDescription": "An Arab historian, sociologist, and philosopher celebrated as one of the greatest minds of the Middle Ages."
     },
     {
       "id": "w_shahnameh",
       "type": "work",
       "label": "Shahnameh",
       "author": "Ferdowsi",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A magnificent national epic of Greater Iran, recounting the mythical and historical past of the Persian Empire.",
+      "authorDescription": "A Persian poet universally recognized as a monumentally important figure in preserving the Persian language and heritage."
     },
     {
       "id": "w_theconferenceof",
       "type": "work",
       "label": "The Conference of the Birds",
       "author": "Attar",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "An allegorical Sufi poem narrating the birds' perilous journey to find their king, symbolizing humanity's search for divine truth.",
+      "authorDescription": "A Persian poet, theoretician of Sufism, and hagiographer profoundly influential in Sufi literature."
     },
     {
       "id": "w_bible",
       "type": "work",
       "label": "Bible",
       "author": "various",
-      "description": "A notable literary work.",
-      "authorDescription": "A notable author of classical literature."
+      "description": "A foundational compilation of texts sacred in Judaism and Christianity, shaping the religious and cultural history of the West.",
+      "authorDescription": "A vast collection compiled by numerous prophets, apostles, and historical figures over many centuries."
     }
   ],
   "edges": [
