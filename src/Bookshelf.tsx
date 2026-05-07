@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { API_URL, getHeaders } from "./api";
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Book, Hash, User, CheckCircle2, Circle, PenLine, Loader2, ShoppingCart } from 'lucide-react';
 import volumesData from '../docs/nodes.json';
@@ -28,14 +30,45 @@ const Bookshelf: React.FC = () => {
   const [previewAvailable, setPreviewAvailable] = useState<boolean>(false);
   const [isFetchingIsbn, setIsFetchingIsbn] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
-  const [userProgress, setUserProgress] = useState<UserProgress>(() => {
-    const saved = localStorage.getItem('volumes-user-progress');
-    return saved ? JSON.parse(saved) : {};
-  });
+  const navigate = useNavigate();
+  const [userProgress, setUserProgress] = useState<UserProgress>({});
+  const [guestWarning, setGuestWarning] = useState<boolean>(false);
+
+  
+  const syncWithServer = async () => {
+    try {
+      const res = await fetch(`${API_URL}/data`, {
+        headers: getHeaders(),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (Object.keys(data.marks || {}).length > 0) {
+          setUserProgress(data.marks);
+        }
+      } else if (res.status === 401) {
+        navigate("/login");
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
   useEffect(() => {
-    localStorage.setItem('volumes-user-progress', JSON.stringify(userProgress));
+    if (localStorage.getItem("token")) {
+      syncWithServer();
+    }
+  }, []);
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      fetch(`${API_URL}/data`, {
+        method: "POST",
+        headers: getHeaders(),
+        body: JSON.stringify({ marks: userProgress, read_list: [] })
+      }).catch(console.error);
+    }
   }, [userProgress]);
+
 
   useEffect(() => {
     if (!selectedWork) {
@@ -61,7 +94,7 @@ const Bookshelf: React.FC = () => {
             if (doc.isbn) {
               collectedIsbns.push(...doc.isbn.slice(0, 5));
             }
-          });
+            });
         }
         
         const foundIsbn = collectedIsbns[0];
@@ -131,7 +164,7 @@ const Bookshelf: React.FC = () => {
             container.innerHTML = '<div class="flex items-center justify-center p-8 text-slate-500 font-medium h-full">Preview not available for this book.</div>';
           }, () => {
             console.log('Google Books viewer loaded successfully');
-          });
+            });
         }
       }
     };
@@ -148,6 +181,9 @@ const Bookshelf: React.FC = () => {
   }, [showPreview, isbn]);
 
   const toggleRead = (workId: string) => {
+    if (!localStorage.getItem("token")) {
+      setGuestWarning(true);
+    }
     setUserProgress(prev => ({
       ...prev,
       [workId]: {
@@ -158,6 +194,9 @@ const Bookshelf: React.FC = () => {
   };
 
   const updateNotes = (workId: string, notes: string) => {
+    if (!localStorage.getItem("token")) {
+      setGuestWarning(true);
+    }
     if (notes.length > 512) return;
     setUserProgress(prev => ({
       ...prev,
@@ -188,10 +227,22 @@ const Bookshelf: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-slate-200">
       <div className="max-w-6xl mx-auto px-6 py-20">
-        <Link to="/" className="inline-flex items-center space-x-2 text-slate-400 hover:text-slate-950 font-bold tracking-tight transition-colors mb-16">
-          <ArrowLeft className="w-5 h-5" />
-          <span className="text-sm uppercase tracking-widest">Volumes</span>
-        </Link>
+        <div className="flex justify-between items-center mb-16">
+          <Link to="/" className="inline-flex items-center space-x-2 text-slate-400 hover:text-slate-950 font-bold tracking-tight transition-colors">
+            <ArrowLeft className="w-5 h-5" />
+            <span className="text-sm uppercase tracking-widest">Volumes</span>
+          </Link>
+          <div className="space-x-4">
+            {localStorage.getItem("token") ? (
+              <button onClick={() => { localStorage.removeItem("token"); window.location.reload(); }} className="text-sm font-semibold text-slate-600 hover:text-slate-900">Logout</button>
+            ) : (
+              <>
+                <Link to="/login" className="text-sm font-semibold text-slate-600 hover:text-slate-900">Login</Link>
+                <Link to="/register" className="text-sm font-semibold text-slate-600 hover:text-slate-900">Register</Link>
+              </>
+            )}
+          </div>
+        </div>
 
         <header className="mb-16 md:mb-24 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-950 mb-4 md:mb-6">

@@ -1,11 +1,12 @@
-# Build and Run
+.PHONY: all run stop down
+
+all: run
+
 run:
-	npm install --legacy-peer-deps
-	npm run dev
+	docker compose up --build
 
-build:
-	npm install --legacy-peer-deps
-	npm run build
+stop:
+	docker compose down -v
 
-clean:
-	rm -rf node_modules dist
+down:
+	docker compose down -v
