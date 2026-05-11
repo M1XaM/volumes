@@ -9,18 +9,40 @@ import json
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Read List Sync Server")
+tags_metadata = [
+    {
+        "name": "auth",
+        "description": "Operations with user authentication and registration.",
+    },
+    {
+        "name": "user data",
+        "description": "Retrieve and update user-specific data like bookmarks and read lists.",
+    },
+]
+
+app = FastAPI(
+    title="Read List Sync Server",
+    description="API for the Read List Sync App, providing user auth and data synchronization.",
+    version="1.0.0",
+    openapi_tags=tags_metadata
+)
 
 app.add_middleware(
     CORSMiddleware,
+
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.post("/register", response_model=schemas.UserResponse)
+@app.post("/register", response_model=schemas.UserResponse, tags=["auth"], summary="Register a new user")
 def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    """
+    Registers a new user in the database.
+    - **username**: Must be unique.
+    - **password**: Will be securely hashed and stored.
+    """
     db_user = auth.get_user(db, username=user.username)
     if db_user:
         raise HTTPException(status_code=400, detail="Username already registered")
@@ -37,8 +59,11 @@ def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
     
     return new_user
 
-@app.post("/login", response_model=schemas.Token)
+@app.post("/login", response_model=schemas.Token, tags=["auth"], summary="Login to get access token")
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    """
+    OAuth2 compatible token login, returning a JWT Token.
+    """
     user = auth.get_user(db, form_data.username)
     if not user or not auth.verify_password(form_data.password, user.hashed_password):
         raise HTTPException(
@@ -52,16 +77,23 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
     )
     return {"access_token": access_token, "token_type": "bearer"}
 
-@app.get("/data", response_model=schemas.UserDataSchema)
+@app.get("/data", response_model=schemas.UserDataSchema, tags=["user data"], summary="Get current user data")
 def get_user_data(current_user: models.User = Depends(auth.get_current_user), db: Session = Depends(get_db)):
+    """
+    Retrieves the authenticated user's reading lists and bookmarks.
+    """
     user_data = db.query(models.UserData).filter(models.UserData.user_id == current_user.id).first()
     marks = json.loads(user_data.marks) if user_data and user_data.marks else {}
     read_list = json.loads(user_data.read_list) if user_data and user_data.read_list else []
     
     return {"marks": marks, "read_list": read_list}
 
-@app.post("/data", response_model=schemas.UserDataSchema)
+@app.post("/data", response_model=schemas.UserDataSchema, tags=["user data"], summary="Update user data")
 def update_user_data(data: schemas.UserDataSchema, current_user: models.User = Depends(auth.get_current_user), db: Session = Depends(get_db)):
+    """
+    Updates the authenticated user's reading lists and bookmarks.
+    Overwrites the current data with the payload.
+    """
     user_data = db.query(models.UserData).filter(models.UserData.user_id == current_user.id).first()
     if not user_data:
         user_data = models.UserData(user_id=current_user.id)
